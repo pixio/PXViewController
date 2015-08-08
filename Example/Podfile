@@ -1,0 +1,12 @@
+source 'git@git.pixio.com:pixio-libraries/specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'PXViewController', :exclusive => true do
+  pod "PXViewController", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "PXViewController", :path => "../"
+
+
+end
