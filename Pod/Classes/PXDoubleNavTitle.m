@@ -84,6 +84,8 @@
     
 //#warning trigger layout change
 //    [self setNeedsUpdateConstraints];
+    
+    [self sizeToFit];
 }
 
 - (void)setTitle:(NSString *)title
@@ -91,6 +93,8 @@
     _title = [title copy];
     [_titleLabel setText:title];
     [self layoutIfNeeded];
+
+    [self sizeToFit];
 }
 
 - (void)setTintColor:(UIColor *)tintColor

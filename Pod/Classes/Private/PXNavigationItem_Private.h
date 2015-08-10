@@ -1,7 +1,6 @@
 //
-//  PXViewController.m
-//
-//  Created by Daniel Blakemore on 4/4/14.
+//  PXNavigationItem_Private.h
+//  PXViewController
 //
 //  Copyright (c) 2015 Pixio
 //
@@ -24,14 +23,17 @@
 //  THE SOFTWARE.
 //
 
-#import "PXViewController.h"
+#import "PXNavigationItem.h"
+#import "PXDoubleNavTitle.h"
 
-@implementation PXViewController
+@interface PXNavigationItem ()
 
-+ (id)appearance
-{
-    // Swizzled by UIViewController+PXViewController
-    return nil;
-}
+@property (nonatomic, readonly) PXDoubleNavTitle* titleView;
+
+@end
+
+@interface UIViewController (PXNavigationItem)
+
+@property (nonatomic, readonly) PXNavigationItem* px_navigationItem;
 
 @end
