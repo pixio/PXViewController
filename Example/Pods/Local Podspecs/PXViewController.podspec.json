@@ -1,16 +1,16 @@
 {
   "name": "PXViewController",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A more customizable and colorable nav bar.",
-  "description": "                       A set of subclasses for viewcontrollers and `UINavigationController` that allow you to have a title and a subtitle in the nav bar as well as custom font, colors, and more.\n",
-  "homepage": "https://git.pixio.com/",
+  "description": "A set of subclasses for viewcontrollers and `UINavigationController` that allow you to have a title and a subtitle in the nav bar as well as custom font, colors, and more.",
+  "homepage": "https://github.com/pixio/PXViewController",
   "license": "MIT",
   "authors": {
     "Daniel Blakemore": "DanBlakemore@gmail.com"
   },
   "source": {
-    "git": "git@git.pixio.com:ios-pods/pxviewcontroller.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/pixio/PXViewController.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "7.0"
@@ -18,7 +18,7 @@
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
-    "BetterNavBar": [
+    "PXViewController": [
       "Pod/Assets/*.png"
     ]
   },

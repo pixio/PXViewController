@@ -7,886 +7,1017 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A74287D143C8284606E4EDE /* PXNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F1D971E532DA965238FC1F /* PXNavigationController.h */; };
-		0C0A2F90EF3D3814E51CB649 /* PXDoubleNavTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D376C9157AEDFAD1DB2D9D /* PXDoubleNavTitle.m */; };
-		17B03E684B0310AFE7DDD21A /* Pods-Tests-PXViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A612BF515F05460230CEFD /* Pods-Tests-PXViewController-dummy.m */; };
-		2FABAAB353EB0EAD8C307C73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */; };
-		343E0BA7F9D6A58FB01FFF06 /* Pods-PXViewController-PXViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0828155162238129611639 /* Pods-PXViewController-PXViewController-dummy.m */; };
-		431FE74E7F02B081061C7E8C /* PXCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5001593DAA34192495222090 /* PXCollectionViewController.h */; };
-		44F6380962BD1B66FBD9184F /* back-nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FF193DB71312F5C35D83DE /* back-nav@2x.png */; };
-		4B584EDA12C12C84D1BFE495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */; };
-		4B882840C930DF7B7789A0C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35362B08774050CF500528BB /* UIKit.framework */; };
-		5037E7C13D41EBE6BB6E9D5B /* Pods-Tests-MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAE13532E3DF1C1FCDB34B5 /* Pods-Tests-MZAppearance-dummy.m */; };
-		5199DAEDA3570C4B3A990701 /* PXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0480F36536F7F308A2D82AF4 /* PXViewController.h */; };
-		52814377C97CAC5265E2916D /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA283D5FFED3F1AAD24B2 /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		58537BB518868E670749F2B0 /* PXTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A67F66D07355B234771E8B6 /* PXTableViewController.h */; };
-		5CA2E0D53FA6420D5DF5BF8F /* PXDoubleNavTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD68077E188470A76C82D69 /* PXDoubleNavTitle.h */; };
-		65F0325A1B3C983100B1AE19 /* PXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F032591B3C983100B1AE19 /* PXTabBarController.m */; };
-		68FDBFCDCB62C9C5EF255421 /* back-nav.png in Resources */ = {isa = PBXBuildFile; fileRef = EE94AE40FF452297227FFDB7 /* back-nav.png */; };
-		6C78EEE6AFB3D910B4F5D767 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */; };
-		6D0F6B353E449A6DCE32BEDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */; };
-		6F340915762F16DE929C96D0 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = 38062B1D00B949C2BD9838FA /* NSInvocation+Copy.h */; };
-		731C7FD2B659C57C07BD59E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D80121770564DD35A5E4FA2 /* QuartzCore.framework */; };
-		73A51FFD11C383621F7D2D01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */; };
-		7B1927BAA939E0E21553D07A /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DBA283D5FFED3F1AAD24B2 /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		88ADDB29B2A0AE92DE8E5380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */; };
-		8F252CA33AA57B3DFAC47055 /* PXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0480F36536F7F308A2D82AF4 /* PXViewController.h */; };
-		8FBA972376B5AF6630ECB575 /* Pods-PXViewController-MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58235025B1F64310E2E793E1 /* Pods-PXViewController-MZAppearance-dummy.m */; };
-		9068FBBF901F67DA76CA97CC /* PXDoubleNavTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD68077E188470A76C82D69 /* PXDoubleNavTitle.h */; };
-		B1F9E2FE3B0F6515C09E9747 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = 38062B1D00B949C2BD9838FA /* NSInvocation+Copy.h */; };
-		B460AE01101FBBC006C96499 /* PXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3620B144655173B5B5D32AC /* PXNavigationController.m */; };
-		B4BC13EFC6B0838690B1ACFD /* Pods-PXViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D868D60D99837B465F8C0BDC /* Pods-PXViewController-dummy.m */; };
-		B7755B929297DA1005991BAA /* PXDoubleNavTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D376C9157AEDFAD1DB2D9D /* PXDoubleNavTitle.m */; };
-		B80D2AA1D588C62C68998C9B /* PXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3620B144655173B5B5D32AC /* PXNavigationController.m */; };
-		BD073D65D8320ED71AD84F44 /* PXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676806CE584D9623746891F /* PXViewController.m */; };
-		C98A00943EEAC9BA57BA602B /* PXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06069837516B25DE6579FDA3 /* PXCollectionViewController.m */; };
-		CB7979365702CEE13D2DA35E /* PXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676806CE584D9623746891F /* PXViewController.m */; };
-		DE29C2C85BA545ABFECA0D5A /* PXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFD698F282E4651A4F7E18F /* PXTableViewController.m */; };
-		E0CB6F0184F1409A6CDA4FCA /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C935C2415E0BA78DE587D4F /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E34EE94A518EF44D39B0C20B /* PXTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A67F66D07355B234771E8B6 /* PXTableViewController.h */; };
-		E6CE753009378631FF44E009 /* back-nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FF193DB71312F5C35D83DE /* back-nav@2x.png */; };
-		E74EFD0C8EFA1CAA19E023AE /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D83DCD3668BB2441DC9D17 /* MZAppearance.h */; };
-		EBA7855D5E93F83F7C470004 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D80121770564DD35A5E4FA2 /* QuartzCore.framework */; };
-		ED78CF3CA92516B4BEF8811C /* PXCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5001593DAA34192495222090 /* PXCollectionViewController.h */; };
-		F087EEA3DDD8FF332EA3E6EB /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E031B0473CEE39BCF18F1F3 /* Pods-Tests-dummy.m */; };
-		F0E6F1AAED4CD9C4908FEA77 /* PXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06069837516B25DE6579FDA3 /* PXCollectionViewController.m */; };
-		F199AC6B2118F5AD30C27676 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D83DCD3668BB2441DC9D17 /* MZAppearance.h */; };
-		F3F46137889DA51B9164714B /* PXNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F1D971E532DA965238FC1F /* PXNavigationController.h */; };
-		FCC0DCAC64AFC074C29559C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35362B08774050CF500528BB /* UIKit.framework */; };
-		FCC190698BF424E48B4088DF /* PXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFD698F282E4651A4F7E18F /* PXTableViewController.m */; };
-		FCDBB4EF2B91CFF7BD6121E3 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C935C2415E0BA78DE587D4F /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FF6A6B26F9065622737B2FA7 /* back-nav.png in Resources */ = {isa = PBXBuildFile; fileRef = EE94AE40FF452297227FFDB7 /* back-nav.png */; };
+		08100E4B33B1B2475F571F55080CE52F /* PXViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91642F179312EFC49A05614948420B75 /* PXViewController-dummy.m */; };
+		0AE79AC924B61AEDD4BBC46FC713E149 /* PXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504E7F468470415A178E96419AD17B9 /* PXCollectionViewController.m */; };
+		0EA5E158FB0D0F50AE6BE3D2F03A6ED8 /* PXBlockAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F340D87D77CCC6F7083BB6BB9AA69B8 /* PXBlockAlertView-dummy.m */; };
+		0EF7288EA34469A62C761B9709D2A054 /* back-nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 331207E9A074172D30D2F3D56EE1D085 /* back-nav.png */; };
+		0F3BB1A19413434CD805FC8E1F7301A3 /* UIAlertController+BetterConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F893E4360536F860C2E2C5CDCEAE2E7 /* UIAlertController+BetterConstructor.h */; };
+		119453973C03153BEEE14C01B2B0D324 /* Pods-PXViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FA28094BBEC317F1654F6EBDCD9043 /* Pods-PXViewController-dummy.m */; };
+		27C613CD8F0D5500013A024E4636F20C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BB94EBF0E4AAB5744A4933E65C05C4 /* SVProgressHUD.m */; };
+		2F8C6CAAE593D8F555D0D54C536E3580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		317602D7E2B9A957806A009744DBB727 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */; };
+		35E362765370A46441C8E803E17C8C8D /* PXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A3671079604A8EAA135F2D350A4AFF /* PXTableViewController.m */; };
+		3DFCE31FA7DE9D8E24824E19E213C793 /* UIAlertController+BetterConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 935D9B26A8B0BAF391BDD06C37F9F46D /* UIAlertController+BetterConstructor.m */; };
+		4CC6A172047784EDFAEAEBBDF0405D3A /* PXNavigationItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BD49751FA02BECFD3CBADDFFA37946C0 /* PXNavigationItem_Private.h */; };
+		4FC481C40332395357332B97EB93E77E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */; };
+		53F9709C50C1C7E58A2500258C8D3730 /* PXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A6335591EA7CABA884D7778CE32FC79 /* PXViewController.h */; };
+		562399E84037FC131540D6154B35833F /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 399D871BBE366AFB42A0CFAE198D7C60 /* MZAppearance.h */; };
+		5A0C36AF8EB6E7FF70681ED5B928D57D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3622BF1147E8CFB29FFF460540BB05 /* UIKit.framework */; };
+		5B83EAB875048CBE754D8269712CCBF2 /* PXNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE36CB8E9633A694F0CF78ABA7783C2B /* PXNavigationItem.m */; };
+		5EDC02DE3041DD808A5FE766D7A0BF60 /* PXTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 266FBB4D74714CA60089C87BF300371E /* PXTableViewController.h */; };
+		60350A235B162381260989FA02D11C52 /* UIViewController+PXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 016B6A4DD3C9146299A52C014571C42C /* UIViewController+PXViewController.h */; };
+		632BB12125B611F8B8E8C1DCA48671A9 /* PXNavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F98120CD0A0F49D11D4483CEF2BA70C8 /* PXNavigationItem.h */; };
+		6968C0E61649FBFA049F016C7BD72E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		69F3A85B7FF4C4CDB4FA0E5F2D16AB48 /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A58C3AF2F5503F56FA1F83603902C106 /* MZAppearance-dummy.m */; };
+		6BB336D79F421E7B1B39D4EB1BDF2A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		7B79C438305EEF16BCD924C2E60AAA2F /* PXBlockAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 662957C881BDCBCBB6A892D683B1AB88 /* PXBlockAlertView.h */; };
+		7BE7688304D568BF106470980EB865C7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004432F9ACB8EFC13B7338B91FA0B8D4 /* SVIndefiniteAnimatedView.m */; };
+		83888EBFE08D5E5C4F292E700303B615 /* PXCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4924BB5154BFA659B954E4F0F2D9346 /* PXCollectionViewController.h */; };
+		85A03721070E4A22495C73B5485CC2BC /* PXDoubleNavTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 82AC69B4A9C377DAC321455B4F470566 /* PXDoubleNavTitle.h */; };
+		89F05D147E1D3780837633BB16691C53 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA63E54340658CFC42C26271C16AD1AB /* SVIndefiniteAnimatedView.h */; };
+		8C3259972A470BD3F864FE1B908E6543 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		8FDE9D9B8A86ABD612D496580B8C2951 /* UIViewController+PXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C4035B9F5D1ECA0B08D1768927FDAC /* UIViewController+PXViewController.m */; };
+		A03F1AE3B7482125F8F23375F6758758 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF07426834069DAEF8C81A8CFC3723 /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A2A44555C89F656DC4E6773A8B900748 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 408112BA2166165E558675A2C16DF4A7 /* Pods-Tests-dummy.m */; };
+		A57154B98EE99D259062EFDC0DFD55A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3622BF1147E8CFB29FFF460540BB05 /* UIKit.framework */; };
+		B0D42E3798828F3B0DFEAE2E8C0A9D5F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D640281A3F42E4FAD9878467BAB9928C /* SVProgressHUD.h */; };
+		B51BAF3EDDDC23F3BFED9E7CE8D877D1 /* back-nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB967AE54CD6FC6C8A7681162EA65C52 /* back-nav@2x.png */; };
+		B66B428E5507F70055BB45A3F16F3B4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		B902402CB35F0F5B00BFD9410CE96707 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B54B07DC7F20255BEC92EED9D688BED /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C0C11F0F4D57D0C04B7E65ADCF6BF072 /* PXNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DD6BBDACE1156400581042585D01E5 /* PXNavigationController.h */; };
+		C6BD1CFE59259303F7F40E858AB4E583 /* PXDoubleNavTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 585A9692257BAC2DD02303505C9A29EE /* PXDoubleNavTitle.m */; };
+		CA0E5FFAF18A4A31307B93BAB570C7B9 /* PXTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = F916B2882F64FD463DEDC31DC4012F4E /* PXTabBarController.h */; };
+		D3128A4F116F495359FCB6984FD49169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		D8A63C4218BAB1C4ABD5D70716464A4E /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B35BB494FDFF98E67BC49BF6C3F9D3 /* NSInvocation+Copy.h */; };
+		DA8A6CA9182C442C357F41AD96FA1A4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3622BF1147E8CFB29FFF460540BB05 /* UIKit.framework */; };
+		DBF50B58F98C65F09F5EC27BBA721466 /* PXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9894765F3E01AB04ACB67A766833E1B9 /* PXNavigationController.m */; };
+		DD7635B80AAE5B9B3D1823128B6B8554 /* PXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85925AF8B47879B6C6B9E959026107F /* PXTabBarController.m */; };
+		E757DE4CAC4E346EF96455C68084F8E1 /* UIAlertController-BetterConstructor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B40C00E7BC04D6DCF21025ED32AA8E /* UIAlertController-BetterConstructor-dummy.m */; };
+		EF59E58E74C15F91FB21CD98DD48CCC4 /* PXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550BBEAFF5186860ECDB69DC9D6C8336 /* PXViewController.m */; };
+		F2B60035483A2967BC4ABA2192E160F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */; };
+		F4911DFBD9179C094B15605524119AAE /* PXBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 792F2223D18DA4EE6AA203A108981B01 /* PXBlockAlertView.m */; };
+		F5ABA31CD2179D1EE0FC3F7183438E56 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE1515F429D484D775013DC61410E45 /* SVProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1871F291CC72F32BB34418C4 /* PBXContainerItemProxy */ = {
+		2323B7527DDC0EB174EBC026C6DF7F62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A180545A14C33AC8D4A7EAE2;
-			remoteInfo = "Pods-PXViewController-MZAppearance";
+			remoteGlobalIDString = 4E0459E90970513A5C2B6553A9E303B4;
+			remoteInfo = "PXBlockAlertView-PXBlockAlertView";
 		};
-		6EA895EDBEA52D5FAAD0EDD6 /* PBXContainerItemProxy */ = {
+		45AE6B66B985B3733C8D11CBC94DD913 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A180545A14C33AC8D4A7EAE2;
-			remoteInfo = "Pods-PXViewController-MZAppearance";
+			remoteGlobalIDString = AC81219DE0473B2BDAE1FD959055F9CB;
+			remoteInfo = PXBlockAlertView;
 		};
-		76964FDCFBD01677E35DF7C0 /* PBXContainerItemProxy */ = {
+		63E2CA4CDD76E67B093E44F1050EA959 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1897D72D885DC2AE542C059D;
-			remoteInfo = "Pods-Tests-PXViewController";
+			remoteGlobalIDString = B4E270550E701CFF347E398ED341B6C0;
+			remoteInfo = PXViewController;
 		};
-		78A0A2FE0FBE496FC7792972 /* PBXContainerItemProxy */ = {
+		6F29882DE563023DD6FB79BAFD0F41E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0104A6629CDA87E3A628B21A;
-			remoteInfo = "Pods-Tests-PXViewController-BetterNavBar";
+			remoteGlobalIDString = FE45D6287D20DE69EEEA475B665F93A5;
+			remoteInfo = MZAppearance;
 		};
-		9A73E7E652E0697E7A58B0F4 /* PBXContainerItemProxy */ = {
+		77990B5154A684C925ACD0B98788A63F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 874F292E900107E1EF143EA1;
-			remoteInfo = "Pods-PXViewController-PXViewController-BetterNavBar";
+			remoteGlobalIDString = 5E60F1E8DEB6CA873FC9666340768E60;
+			remoteInfo = "PXViewController-PXViewController";
 		};
-		CAF0EA7443A1C5ED82A347AC /* PBXContainerItemProxy */ = {
+		9034B4DBD203978A7A8C444EBADF11E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AD0C3901F1BAFD0A9DA4FF9;
-			remoteInfo = "Pods-Tests-MZAppearance";
+			remoteGlobalIDString = 26673BA590AED2FB86AE39857C41FD2B;
+			remoteInfo = "UIAlertController-BetterConstructor";
 		};
-		CD2207B0481B660C99985311 /* PBXContainerItemProxy */ = {
+		BED35CA467A9EEE1CFF8175F0F76FD24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AD0C3901F1BAFD0A9DA4FF9;
-			remoteInfo = "Pods-Tests-MZAppearance";
+			remoteGlobalIDString = B4E270550E701CFF347E398ED341B6C0;
+			remoteInfo = PXViewController;
 		};
-		DAC0CD0D426B9C52262150A7 /* PBXContainerItemProxy */ = {
+		D765648AB6890C36123105BBAAF04C15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E501BCF5ABE1F876E044A6AC;
-			remoteInfo = "Pods-PXViewController-PXViewController";
+			remoteGlobalIDString = FE45D6287D20DE69EEEA475B665F93A5;
+			remoteInfo = MZAppearance;
+		};
+		DBF745204718371B8955758FAF2E5E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B281DA29A9C3EDFB45BA53651F6BA611;
+			remoteInfo = SVProgressHUD;
+		};
+		E6D7AB51EB29C7A92F7E6EA8ACDC645A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE45D6287D20DE69EEEA475B665F93A5;
+			remoteInfo = MZAppearance;
+		};
+		F9DD31F3A6412899C6D70EC19FBF5845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26673BA590AED2FB86AE39857C41FD2B;
+			remoteInfo = "UIAlertController-BetterConstructor";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02FFA7CF92287F1F4B6C1CD0 /* Pods-PXViewController-PXViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController-PXViewController.xcconfig"; sourceTree = "<group>"; };
-		0480F36536F7F308A2D82AF4 /* PXViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXViewController.h; sourceTree = "<group>"; };
-		06069837516B25DE6579FDA3 /* PXCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXCollectionViewController.m; sourceTree = "<group>"; };
-		0A67F66D07355B234771E8B6 /* PXTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXTableViewController.h; sourceTree = "<group>"; };
-		0A74F858F4C24B55179D87ED /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0E031B0473CEE39BCF18F1F3 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		11B15EBD72C51372B6F4F520 /* Pods-Tests-MZAppearance-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-MZAppearance-Private.xcconfig"; path = "../Pods-Tests-MZAppearance/Pods-Tests-MZAppearance-Private.xcconfig"; sourceTree = "<group>"; };
-		14D2F6F0BE1C3A87CE39F43E /* Pods-PXViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController.debug.xcconfig"; sourceTree = "<group>"; };
-		1C935C2415E0BA78DE587D4F /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
-		21C19336A7920250050465F8 /* Pods-PXViewController-PXViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController-PXViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		26FF193DB71312F5C35D83DE /* back-nav@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "back-nav@2x.png"; sourceTree = "<group>"; };
-		349AFB38EBFBE0BEE840EE8A /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		35362B08774050CF500528BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3701101AF0B67C1F75E5BE78 /* Pods-PXViewController-PXViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PXViewController-PXViewController-prefix.pch"; sourceTree = "<group>"; };
-		371999E9D2CCB6445239B076 /* BetterNavBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterNavBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		38062B1D00B949C2BD9838FA /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
-		3AD68077E188470A76C82D69 /* PXDoubleNavTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXDoubleNavTitle.h; sourceTree = "<group>"; };
-		3AE867EF1F32E3D617BE78F5 /* Pods-PXViewController-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PXViewController-environment.h"; sourceTree = "<group>"; };
-		4A897C4A2767DCF31FF1A000 /* Pods-PXViewController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PXViewController-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5001593DAA34192495222090 /* PXCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXCollectionViewController.h; sourceTree = "<group>"; };
-		511E56B6F9768AE3E8A6249B /* Pods-PXViewController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PXViewController-acknowledgements.plist"; sourceTree = "<group>"; };
-		515935C68A174D9A4E1A4E0E /* libPods-Tests-MZAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-MZAppearance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		58235025B1F64310E2E793E1 /* Pods-PXViewController-MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PXViewController-MZAppearance-dummy.m"; sourceTree = "<group>"; };
-		5D80121770564DD35A5E4FA2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		61D9853F6215A978ABE2A576 /* Pods-Tests-MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-MZAppearance.xcconfig"; path = "../Pods-Tests-MZAppearance/Pods-Tests-MZAppearance.xcconfig"; sourceTree = "<group>"; };
-		65F032581B3C983100B1AE19 /* PXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXTabBarController.h; sourceTree = "<group>"; };
-		65F032591B3C983100B1AE19 /* PXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXTabBarController.m; sourceTree = "<group>"; };
-		68CA62DD45C1999A8427F3EE /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		69E8B46C758A401F5DBDDD8D /* libPods-PXViewController-MZAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PXViewController-MZAppearance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D0E364848A980F7301CD372 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		776FC518F7E9AAB04B4C5A77 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		82C4D8AD1E8088EAE46E4CA7 /* libPods-PXViewController-PXViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PXViewController-PXViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0828155162238129611639 /* Pods-PXViewController-PXViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PXViewController-PXViewController-dummy.m"; sourceTree = "<group>"; };
-		9AE769AB11039625D6218EE9 /* Pods-PXViewController-MZAppearance-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController-MZAppearance-Private.xcconfig"; sourceTree = "<group>"; };
-		9E16EA95C7197BBF7DA5AD3F /* Pods-PXViewController-MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController-MZAppearance.xcconfig"; sourceTree = "<group>"; };
-		9E1ACF643C250EAC1B9EEA3B /* Pods-PXViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PXViewController-resources.sh"; sourceTree = "<group>"; };
-		A3D376C9157AEDFAD1DB2D9D /* PXDoubleNavTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXDoubleNavTitle.m; sourceTree = "<group>"; };
-		A4A612BF515F05460230CEFD /* Pods-Tests-PXViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-PXViewController-dummy.m"; path = "../Pods-Tests-PXViewController/Pods-Tests-PXViewController-dummy.m"; sourceTree = "<group>"; };
-		A6902D260AFB73293D262E3D /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		AEB29A3AFC184312B4EE5B8D /* Pods-Tests-PXViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-PXViewController.xcconfig"; path = "../Pods-Tests-PXViewController/Pods-Tests-PXViewController.xcconfig"; sourceTree = "<group>"; };
-		B676806CE584D9623746891F /* PXViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXViewController.m; sourceTree = "<group>"; };
-		B88D9C1588D56E1A53FAAAB5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9CCA2A1DC220479A1656364 /* Pods-PXViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController.release.xcconfig"; sourceTree = "<group>"; };
-		BC2F1065ED580DC478EF1825 /* libPods-Tests-PXViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-PXViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1DBA283D5FFED3F1AAD24B2 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
-		C35943D3A1FAFC15945037ED /* Pods-Tests-PXViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-PXViewController-Private.xcconfig"; path = "../Pods-Tests-PXViewController/Pods-Tests-PXViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		C3620B144655173B5B5D32AC /* PXNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXNavigationController.m; sourceTree = "<group>"; };
-		C463EC00EEFFBA95D8B35050 /* BetterNavBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterNavBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBFD698F282E4651A4F7E18F /* PXTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXTableViewController.m; sourceTree = "<group>"; };
-		CEAE13532E3DF1C1FCDB34B5 /* Pods-Tests-MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-MZAppearance-dummy.m"; path = "../Pods-Tests-MZAppearance/Pods-Tests-MZAppearance-dummy.m"; sourceTree = "<group>"; };
-		D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D868D60D99837B465F8C0BDC /* Pods-PXViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PXViewController-dummy.m"; sourceTree = "<group>"; };
-		D8E87ECC0C52A60A35CF79EC /* Pods-PXViewController-MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PXViewController-MZAppearance-prefix.pch"; sourceTree = "<group>"; };
-		D8F1D971E532DA965238FC1F /* PXNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXNavigationController.h; sourceTree = "<group>"; };
-		E2D83DCD3668BB2441DC9D17 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
-		E3086C218E8EA3158F486D32 /* Pods-Tests-MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-MZAppearance-prefix.pch"; path = "../Pods-Tests-MZAppearance/Pods-Tests-MZAppearance-prefix.pch"; sourceTree = "<group>"; };
-		E6B2ADC4F4827C6856B85078 /* Pods-Tests-PXViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-PXViewController-prefix.pch"; path = "../Pods-Tests-PXViewController/Pods-Tests-PXViewController-prefix.pch"; sourceTree = "<group>"; };
-		E8CAF1D900790968AADED09A /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EA20D33C3950B99AB754787F /* libPods-PXViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PXViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE94AE40FF452297227FFDB7 /* back-nav.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "back-nav.png"; sourceTree = "<group>"; };
+		004432F9ACB8EFC13B7338B91FA0B8D4 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		016B6A4DD3C9146299A52C014571C42C /* UIViewController+PXViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PXViewController.h"; sourceTree = "<group>"; };
+		08401BCF463FF9EFF2ECEF96646D24A9 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		08A35CA45A33C660D7CFBF1F372E25C5 /* PXViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PXViewController-prefix.pch"; sourceTree = "<group>"; };
+		09F4723A62F5A97D6B2C300C2179ACFF /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AACB35C6D83587FF43FC25C01DAD200 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		0F2594598E819318EE40314C9307C9A6 /* PXBlockAlertView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PXBlockAlertView-Private.xcconfig"; sourceTree = "<group>"; };
+		13859ACB1950432C31D933C0077EFCFA /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15438C90DE508602BBBBFDED5BC41885 /* PXBlockAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PXBlockAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B35BB494FDFF98E67BC49BF6C3F9D3 /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		1EB4495BDEFF7F6DF6AE1F9F4D0D3FFF /* UIAlertController-BetterConstructor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIAlertController-BetterConstructor-prefix.pch"; sourceTree = "<group>"; };
+		248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		266FBB4D74714CA60089C87BF300371E /* PXTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXTableViewController.h; sourceTree = "<group>"; };
+		2A7872452C921F2C612542852AD728BF /* Pods-PXViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PXViewController-resources.sh"; sourceTree = "<group>"; };
+		2D25BE38235A5964A8D8473FDD4A507E /* Pods-PXViewController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PXViewController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EA0BD479800A688508ACDEC8C1679CC /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		331207E9A074172D30D2F3D56EE1D085 /* back-nav.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "back-nav.png"; sourceTree = "<group>"; };
+		37226909910BD7184D83FA42C3400E11 /* libPXBlockAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPXBlockAlertView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A3671079604A8EAA135F2D350A4AFF /* PXTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXTableViewController.m; sourceTree = "<group>"; };
+		37DD6BBDACE1156400581042585D01E5 /* PXNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXNavigationController.h; sourceTree = "<group>"; };
+		399D871BBE366AFB42A0CFAE198D7C60 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
+		3EB7C1DED31AE83EC5F1906903DE52CA /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
+		3F893E4360536F860C2E2C5CDCEAE2E7 /* UIAlertController+BetterConstructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+BetterConstructor.h"; path = "Pod/Classes/UIAlertController+BetterConstructor.h"; sourceTree = "<group>"; };
+		408112BA2166165E558675A2C16DF4A7 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		41CB04E1A48BC2081D18B7DF61352E67 /* SVProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SVProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		427989BD4F2906850A52047D126D4D6D /* Pods-PXViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		43AF07426834069DAEF8C81A8CFC3723 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		4B16EFFAF4EBB66774BF8D29307260E6 /* MZAppearance-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MZAppearance-Private.xcconfig"; sourceTree = "<group>"; };
+		4B3622BF1147E8CFB29FFF460540BB05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5504E7F468470415A178E96419AD17B9 /* PXCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXCollectionViewController.m; sourceTree = "<group>"; };
+		550BBEAFF5186860ECDB69DC9D6C8336 /* PXViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXViewController.m; sourceTree = "<group>"; };
+		56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		585A9692257BAC2DD02303505C9A29EE /* PXDoubleNavTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXDoubleNavTitle.m; sourceTree = "<group>"; };
+		606D2FF285DFE176943C1D7D22306F0F /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6601F140A386D752339571A3AC766921 /* Pods-PXViewController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PXViewController-acknowledgements.plist"; sourceTree = "<group>"; };
+		662957C881BDCBCBB6A892D683B1AB88 /* PXBlockAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PXBlockAlertView.h; path = Pod/Classes/PXBlockAlertView.h; sourceTree = "<group>"; };
+		72730DFEC545B0F7A4BF544C497495D8 /* PXViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PXViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B40C00E7BC04D6DCF21025ED32AA8E /* UIAlertController-BetterConstructor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController-BetterConstructor-dummy.m"; sourceTree = "<group>"; };
+		792F2223D18DA4EE6AA203A108981B01 /* PXBlockAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PXBlockAlertView.m; path = Pod/Classes/PXBlockAlertView.m; sourceTree = "<group>"; };
+		7CC171B9D59667EB656472700CA61148 /* libPXViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPXViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		82AC69B4A9C377DAC321455B4F470566 /* PXDoubleNavTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXDoubleNavTitle.h; sourceTree = "<group>"; };
+		88DA53ECD4DDD210C54E0883E8F5D88A /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
+		8A6335591EA7CABA884D7778CE32FC79 /* PXViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXViewController.h; sourceTree = "<group>"; };
+		8B54B07DC7F20255BEC92EED9D688BED /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
+		8CF77029633F113AAADF98BE38930253 /* UIAlertController-BetterConstructor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIAlertController-BetterConstructor-Private.xcconfig"; sourceTree = "<group>"; };
+		91642F179312EFC49A05614948420B75 /* PXViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PXViewController-dummy.m"; sourceTree = "<group>"; };
+		935D9B26A8B0BAF391BDD06C37F9F46D /* UIAlertController+BetterConstructor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+BetterConstructor.m"; path = "Pod/Classes/UIAlertController+BetterConstructor.m"; sourceTree = "<group>"; };
+		9894765F3E01AB04ACB67A766833E1B9 /* PXNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXNavigationController.m; sourceTree = "<group>"; };
+		9AFA2C7C7CB83626A3E7E6F0B121CA20 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B2219906BE3593CD25B3129D65A8489 /* libPods-PXViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PXViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D69E84A2491146B6CFDF47C072385B9 /* PXBlockAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PXBlockAlertView.xcconfig; sourceTree = "<group>"; };
+		9F340D87D77CCC6F7083BB6BB9AA69B8 /* PXBlockAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PXBlockAlertView-dummy.m"; sourceTree = "<group>"; };
+		A2BB94EBF0E4AAB5744A4933E65C05C4 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		A58C3AF2F5503F56FA1F83603902C106 /* MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAppearance-dummy.m"; sourceTree = "<group>"; };
+		A864043ED5E8E2107E1F8F1361317565 /* UIAlertController-BetterConstructor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIAlertController-BetterConstructor.xcconfig"; sourceTree = "<group>"; };
+		A8C4035B9F5D1ECA0B08D1768927FDAC /* UIViewController+PXViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PXViewController.m"; sourceTree = "<group>"; };
+		B23C8452057A0423EF78BE7D78A07F4F /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB967AE54CD6FC6C8A7681162EA65C52 /* back-nav@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "back-nav@2x.png"; sourceTree = "<group>"; };
+		BD49751FA02BECFD3CBADDFFA37946C0 /* PXNavigationItem_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXNavigationItem_Private.h; sourceTree = "<group>"; };
+		BE36CB8E9633A694F0CF78ABA7783C2B /* PXNavigationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXNavigationItem.m; sourceTree = "<group>"; };
+		C0A1DA300351EEB3BFFF3B16C4C4923A /* PXBlockAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PXBlockAlertView-prefix.pch"; sourceTree = "<group>"; };
+		C7AFF7E4C846FDD31CCE85DFA75B0097 /* Pods-PXViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PXViewController.release.xcconfig"; sourceTree = "<group>"; };
+		C85925AF8B47879B6C6B9E959026107F /* PXTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PXTabBarController.m; sourceTree = "<group>"; };
+		C8FA28094BBEC317F1654F6EBDCD9043 /* Pods-PXViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PXViewController-dummy.m"; sourceTree = "<group>"; };
+		C94F07AE4307A6B3F04BA3B7E4E3EFDA /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		CA63E54340658CFC42C26271C16AD1AB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		D4924BB5154BFA659B954E4F0F2D9346 /* PXCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXCollectionViewController.h; sourceTree = "<group>"; };
+		D640281A3F42E4FAD9878467BAB9928C /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		D8D31D5B941F9D3FD1E40028C54FF151 /* PXViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PXViewController.xcconfig; sourceTree = "<group>"; };
+		D9325160DC245E8E5D7D008FDCCD9864 /* PXViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PXViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		D95A810AD55F60D1B1ABCF93E0C73CC5 /* libMZAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZAppearance.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7BBC58E7DE4D9582A25B201224928B /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		E66CECC9DA40F11AEBD9EC0FDA344800 /* libUIAlertController-BetterConstructor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIAlertController-BetterConstructor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F916B2882F64FD463DEDC31DC4012F4E /* PXTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXTabBarController.h; sourceTree = "<group>"; };
+		F98120CD0A0F49D11D4483CEF2BA70C8 /* PXNavigationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PXNavigationItem.h; sourceTree = "<group>"; };
+		FFE1515F429D484D775013DC61410E45 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0EE54C88C558A368DB2D0ABC /* Frameworks */ = {
+		16F1CCA6D8F5FFD66D4B1ADB20EF683B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FABAAB353EB0EAD8C307C73 /* Foundation.framework in Frameworks */,
+				F2B60035483A2967BC4ABA2192E160F3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EC23371D48DE5B326FF1B27 /* Frameworks */ = {
+		383B4BF839254A82265A1E6D540C9F3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A51FFD11C383621F7D2D01 /* Foundation.framework in Frameworks */,
+				2F8C6CAAE593D8F555D0D54C536E3580 /* Foundation.framework in Frameworks */,
+				317602D7E2B9A957806A009744DBB727 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43CE5B97163D407A412ED61D /* Frameworks */ = {
+		5483A13A576F4A439B4B77B77D5921DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C78EEE6AFB3D910B4F5D767 /* Foundation.framework in Frameworks */,
-				731C7FD2B659C57C07BD59E2 /* QuartzCore.framework in Frameworks */,
+				6968C0E61649FBFA049F016C7BD72E17 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A4655D56778A242D221DE88 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B584EDA12C12C84D1BFE495 /* Foundation.framework in Frameworks */,
-				EBA7855D5E93F83F7C470004 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5CE3CFBC1653D45A2AEA8A4D /* Frameworks */ = {
+		6D49F69C98EBFD6B1F856B06F1800A57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B9125A38FC3545BB70B0923 /* Frameworks */ = {
+		6F3823427048621B254ABDB07F637C39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D0F6B353E449A6DCE32BEDD /* Foundation.framework in Frameworks */,
-				4B882840C930DF7B7789A0C2 /* UIKit.framework in Frameworks */,
+				D3128A4F116F495359FCB6984FD49169 /* Foundation.framework in Frameworks */,
+				4FC481C40332395357332B97EB93E77E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C11C6C389F334C8A315F2D2 /* Frameworks */ = {
+		8475CB6ED0AAEA426CA2C5316D2FB777 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88ADDB29B2A0AE92DE8E5380 /* Foundation.framework in Frameworks */,
-				FCC0DCAC64AFC074C29559C9 /* UIKit.framework in Frameworks */,
+				8C3259972A470BD3F864FE1B908E6543 /* Foundation.framework in Frameworks */,
+				5A0C36AF8EB6E7FF70681ED5B928D57D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A515C29209D03E192B7E05C7 /* Frameworks */ = {
+		AB2A90F485045D79B39562D861DC1B68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEC1BD80BAB68F1C5E79DF2E82BFCA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB336D79F421E7B1B39D4EB1BDF2A79 /* Foundation.framework in Frameworks */,
+				A57154B98EE99D259062EFDC0DFD55A7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC2ABAAB2ACBF0ABFE3B48D22D44CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66B428E5507F70055BB45A3F16F3B4A /* Foundation.framework in Frameworks */,
+				DA8A6CA9182C442C357F41AD96FA1A4D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C184DBFB5B1CD2634A748E /* Products */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C463EC00EEFFBA95D8B35050 /* BetterNavBar.bundle */,
-				371999E9D2CCB6445239B076 /* BetterNavBar.bundle */,
-				EA20D33C3950B99AB754787F /* libPods-PXViewController.a */,
-				69E8B46C758A401F5DBDDD8D /* libPods-PXViewController-MZAppearance.a */,
-				82C4D8AD1E8088EAE46E4CA7 /* libPods-PXViewController-PXViewController.a */,
-				B88D9C1588D56E1A53FAAAB5 /* libPods-Tests.a */,
-				515935C68A174D9A4E1A4E0E /* libPods-Tests-MZAppearance.a */,
-				BC2F1065ED580DC478EF1825 /* libPods-Tests-PXViewController.a */,
+				64F024328420545A9A70B81EC0160AA9 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0DA6C816C5DB9F4BD3BCBB4A /* PXViewController */ = {
+		142676B984A6335477E654A883EDAA1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D3B41BB1E52EE3C437AEF4FE /* Pod */,
-				1A5677B041A11E675287F8E6 /* Resources */,
-				45618F95E026C0ED9FB26FA3 /* Support Files */,
+				62D5D3CE156E5FCD7750ACEE0564B975 /* MZAppearance */,
+				67FC7868696BC32200C99BA5BD48455E /* PXBlockAlertView */,
+				58F8F09EB213375ACFF5E2C7FB6B591D /* SVProgressHUD */,
+				47194DAD5A162756D3CB75CA34858EF7 /* UIAlertController-BetterConstructor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		156729DF1AF9087479E69D15F483D369 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D69E84A2491146B6CFDF47C072385B9 /* PXBlockAlertView.xcconfig */,
+				0F2594598E819318EE40314C9307C9A6 /* PXBlockAlertView-Private.xcconfig */,
+				9F340D87D77CCC6F7083BB6BB9AA69B8 /* PXBlockAlertView-dummy.m */,
+				C0A1DA300351EEB3BFFF3B16C4C4923A /* PXBlockAlertView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PXBlockAlertView";
+			sourceTree = "<group>";
+		};
+		19EADC327EA9A4778DAE268FF4F4E665 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D31D5B941F9D3FD1E40028C54FF151 /* PXViewController.xcconfig */,
+				D9325160DC245E8E5D7D008FDCCD9864 /* PXViewController-Private.xcconfig */,
+				91642F179312EFC49A05614948420B75 /* PXViewController-dummy.m */,
+				08A35CA45A33C660D7CFBF1F372E25C5 /* PXViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PXViewController";
+			sourceTree = "<group>";
+		};
+		2BB522D17AC03A9FF2B0E9CDB087ECDE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				331207E9A074172D30D2F3D56EE1D085 /* back-nav.png */,
+				BB967AE54CD6FC6C8A7681162EA65C52 /* back-nav@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		35930428B66367F999CD734BC2FF72C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AACB35C6D83587FF43FC25C01DAD200 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		407F2BB8C20A7F5B6794054528E26C5B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B71DA0AB41A0D2BDA6A2F9C4CCB91860 /* Pods-PXViewController */,
+				E3241428298E8CD708DCCE1E43641864 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		41835F10CACB7B7FB8C69D76B85073C2 /* PXViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62EE68F90AA761A0188182F04DB885DD /* Pod */,
+				9C3B9341F4DE70616DD7F2BEC18B7DF9 /* Resources */,
+				19EADC327EA9A4778DAE268FF4F4E665 /* Support Files */,
 			);
 			name = PXViewController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		1A5677B041A11E675287F8E6 /* Resources */ = {
+		47194DAD5A162756D3CB75CA34858EF7 /* UIAlertController-BetterConstructor */ = {
 			isa = PBXGroup;
 			children = (
-				9710190DB9CBFA722F637DF4 /* Pod */,
+				3F893E4360536F860C2E2C5CDCEAE2E7 /* UIAlertController+BetterConstructor.h */,
+				935D9B26A8B0BAF391BDD06C37F9F46D /* UIAlertController+BetterConstructor.m */,
+				67673CB5B5CE87D467D5D1A836E1B4F8 /* Support Files */,
 			);
-			name = Resources;
+			path = "UIAlertController-BetterConstructor";
 			sourceTree = "<group>";
 		};
-		1B8CC41D73A4365B4D049CDB /* Support Files */ = {
+		58F8F09EB213375ACFF5E2C7FB6B591D /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				9E16EA95C7197BBF7DA5AD3F /* Pods-PXViewController-MZAppearance.xcconfig */,
-				9AE769AB11039625D6218EE9 /* Pods-PXViewController-MZAppearance-Private.xcconfig */,
-				58235025B1F64310E2E793E1 /* Pods-PXViewController-MZAppearance-dummy.m */,
-				D8E87ECC0C52A60A35CF79EC /* Pods-PXViewController-MZAppearance-prefix.pch */,
-				61D9853F6215A978ABE2A576 /* Pods-Tests-MZAppearance.xcconfig */,
-				11B15EBD72C51372B6F4F520 /* Pods-Tests-MZAppearance-Private.xcconfig */,
-				CEAE13532E3DF1C1FCDB34B5 /* Pods-Tests-MZAppearance-dummy.m */,
-				E3086C218E8EA3158F486D32 /* Pods-Tests-MZAppearance-prefix.pch */,
+				CA63E54340658CFC42C26271C16AD1AB /* SVIndefiniteAnimatedView.h */,
+				004432F9ACB8EFC13B7338B91FA0B8D4 /* SVIndefiniteAnimatedView.m */,
+				D640281A3F42E4FAD9878467BAB9928C /* SVProgressHUD.h */,
+				A2BB94EBF0E4AAB5744A4933E65C05C4 /* SVProgressHUD.m */,
+				35930428B66367F999CD734BC2FF72C5 /* Resources */,
+				CE053D76984834938F76749887DBC9F4 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-PXViewController-MZAppearance";
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		2846C4855DC2A470E71FBD1A /* Development Pods */ = {
+		62D5D3CE156E5FCD7750ACEE0564B975 /* MZAppearance */ = {
 			isa = PBXGroup;
 			children = (
-				0DA6C816C5DB9F4BD3BCBB4A /* PXViewController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2D29B4912A3EB60F83D2582F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				845EEC4DE19C5B733364ABF9 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		45618F95E026C0ED9FB26FA3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				02FFA7CF92287F1F4B6C1CD0 /* Pods-PXViewController-PXViewController.xcconfig */,
-				21C19336A7920250050465F8 /* Pods-PXViewController-PXViewController-Private.xcconfig */,
-				8F0828155162238129611639 /* Pods-PXViewController-PXViewController-dummy.m */,
-				3701101AF0B67C1F75E5BE78 /* Pods-PXViewController-PXViewController-prefix.pch */,
-				AEB29A3AFC184312B4EE5B8D /* Pods-Tests-PXViewController.xcconfig */,
-				C35943D3A1FAFC15945037ED /* Pods-Tests-PXViewController-Private.xcconfig */,
-				A4A612BF515F05460230CEFD /* Pods-Tests-PXViewController-dummy.m */,
-				E6B2ADC4F4827C6856B85078 /* Pods-Tests-PXViewController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-PXViewController-PXViewController";
-			sourceTree = "<group>";
-		};
-		632B3E454A073848482D6210 /* MZAppearance */ = {
-			isa = PBXGroup;
-			children = (
-				E2D83DCD3668BB2441DC9D17 /* MZAppearance.h */,
-				1C935C2415E0BA78DE587D4F /* MZAppearance.m */,
-				38062B1D00B949C2BD9838FA /* NSInvocation+Copy.h */,
-				C1DBA283D5FFED3F1AAD24B2 /* NSInvocation+Copy.m */,
-				1B8CC41D73A4365B4D049CDB /* Support Files */,
+				399D871BBE366AFB42A0CFAE198D7C60 /* MZAppearance.h */,
+				8B54B07DC7F20255BEC92EED9D688BED /* MZAppearance.m */,
+				16B35BB494FDFF98E67BC49BF6C3F9D3 /* NSInvocation+Copy.h */,
+				43AF07426834069DAEF8C81A8CFC3723 /* NSInvocation+Copy.m */,
+				FADA4FBD0BD9221ACE1C674E0B3C0F79 /* Support Files */,
 			);
 			path = MZAppearance;
 			sourceTree = "<group>";
 		};
-		71E230AAF094E6515D0411A9 /* Assets */ = {
+		62EE68F90AA761A0188182F04DB885DD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EE94AE40FF452297227FFDB7 /* back-nav.png */,
-				26FF193DB71312F5C35D83DE /* back-nav@2x.png */,
+				BFF743B7BA2486435202AB55B1349CB3 /* Classes */,
 			);
-			path = Assets;
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		7AAA582F87B61CA2517BECE3 /* Pods */ = {
+		64F024328420545A9A70B81EC0160AA9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				632B3E454A073848482D6210 /* MZAppearance */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		845EEC4DE19C5B733364ABF9 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D7C24545DF7ED47E2FF5FF39 /* Foundation.framework */,
-				5D80121770564DD35A5E4FA2 /* QuartzCore.framework */,
-				35362B08774050CF500528BB /* UIKit.framework */,
+				56D3398D3EB7446928A0C32F0F7FFF73 /* Foundation.framework */,
+				248AF69DE57106C64A592DE30A9D615A /* QuartzCore.framework */,
+				4B3622BF1147E8CFB29FFF460540BB05 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		959850C84396360AF518489C /* Targets Support Files */ = {
+		67673CB5B5CE87D467D5D1A836E1B4F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E478789C90B3695CE6725DB5 /* Pods-PXViewController */,
-				FE6EC98F092BE9681B4A4EFC /* Pods-Tests */,
+				A864043ED5E8E2107E1F8F1361317565 /* UIAlertController-BetterConstructor.xcconfig */,
+				8CF77029633F113AAADF98BE38930253 /* UIAlertController-BetterConstructor-Private.xcconfig */,
+				76B40C00E7BC04D6DCF21025ED32AA8E /* UIAlertController-BetterConstructor-dummy.m */,
+				1EB4495BDEFF7F6DF6AE1F9F4D0D3FFF /* UIAlertController-BetterConstructor-prefix.pch */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/UIAlertController-BetterConstructor";
 			sourceTree = "<group>";
 		};
-		9710190DB9CBFA722F637DF4 /* Pod */ = {
+		67FC7868696BC32200C99BA5BD48455E /* PXBlockAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				71E230AAF094E6515D0411A9 /* Assets */,
+				662957C881BDCBCBB6A892D683B1AB88 /* PXBlockAlertView.h */,
+				792F2223D18DA4EE6AA203A108981B01 /* PXBlockAlertView.m */,
+				156729DF1AF9087479E69D15F483D369 /* Support Files */,
 			);
-			path = Pod;
+			path = PXBlockAlertView;
 			sourceTree = "<group>";
 		};
-		B1826EE28487DA426FA5BE59 /* Classes */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				3AD68077E188470A76C82D69 /* PXDoubleNavTitle.h */,
-				A3D376C9157AEDFAD1DB2D9D /* PXDoubleNavTitle.m */,
-				D8F1D971E532DA965238FC1F /* PXNavigationController.h */,
-				C3620B144655173B5B5D32AC /* PXNavigationController.m */,
-				5001593DAA34192495222090 /* PXCollectionViewController.h */,
-				06069837516B25DE6579FDA3 /* PXCollectionViewController.m */,
-				0A67F66D07355B234771E8B6 /* PXTableViewController.h */,
-				CBFD698F282E4651A4F7E18F /* PXTableViewController.m */,
-				65F032581B3C983100B1AE19 /* PXTabBarController.h */,
-				65F032591B3C983100B1AE19 /* PXTabBarController.m */,
-				0480F36536F7F308A2D82AF4 /* PXViewController.h */,
-				B676806CE584D9623746891F /* PXViewController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		D3B41BB1E52EE3C437AEF4FE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B1826EE28487DA426FA5BE59 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		D91F768F08F8FF07A723975B = {
-			isa = PBXGroup;
-			children = (
-				0A74F858F4C24B55179D87ED /* Podfile */,
-				2846C4855DC2A470E71FBD1A /* Development Pods */,
-				2D29B4912A3EB60F83D2582F /* Frameworks */,
-				7AAA582F87B61CA2517BECE3 /* Pods */,
-				03C184DBFB5B1CD2634A748E /* Products */,
-				959850C84396360AF518489C /* Targets Support Files */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				EF608D909B4DA8C9F124CF8F30EBF0F9 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				142676B984A6335477E654A883EDAA1C /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				407F2BB8C20A7F5B6794054528E26C5B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E478789C90B3695CE6725DB5 /* Pods-PXViewController */ = {
+		7E2A5BB7B226242B16792A3F812569DB /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				4A897C4A2767DCF31FF1A000 /* Pods-PXViewController-acknowledgements.markdown */,
-				511E56B6F9768AE3E8A6249B /* Pods-PXViewController-acknowledgements.plist */,
-				D868D60D99837B465F8C0BDC /* Pods-PXViewController-dummy.m */,
-				3AE867EF1F32E3D617BE78F5 /* Pods-PXViewController-environment.h */,
-				9E1ACF643C250EAC1B9EEA3B /* Pods-PXViewController-resources.sh */,
-				14D2F6F0BE1C3A87CE39F43E /* Pods-PXViewController.debug.xcconfig */,
-				B9CCA2A1DC220479A1656364 /* Pods-PXViewController.release.xcconfig */,
+				F98120CD0A0F49D11D4483CEF2BA70C8 /* PXNavigationItem.h */,
+				BE36CB8E9633A694F0CF78ABA7783C2B /* PXNavigationItem.m */,
+				BD49751FA02BECFD3CBADDFFA37946C0 /* PXNavigationItem_Private.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		9C3B9341F4DE70616DD7F2BEC18B7DF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D25CD8F29678A8035B7F86B4AD380DB4 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B71DA0AB41A0D2BDA6A2F9C4CCB91860 /* Pods-PXViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D25BE38235A5964A8D8473FDD4A507E /* Pods-PXViewController-acknowledgements.markdown */,
+				6601F140A386D752339571A3AC766921 /* Pods-PXViewController-acknowledgements.plist */,
+				C8FA28094BBEC317F1654F6EBDCD9043 /* Pods-PXViewController-dummy.m */,
+				2A7872452C921F2C612542852AD728BF /* Pods-PXViewController-resources.sh */,
+				427989BD4F2906850A52047D126D4D6D /* Pods-PXViewController.debug.xcconfig */,
+				C7AFF7E4C846FDD31CCE85DFA75B0097 /* Pods-PXViewController.release.xcconfig */,
 			);
 			name = "Pods-PXViewController";
 			path = "Target Support Files/Pods-PXViewController";
 			sourceTree = "<group>";
 		};
-		FE6EC98F092BE9681B4A4EFC /* Pods-Tests */ = {
+		BFF743B7BA2486435202AB55B1349CB3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				776FC518F7E9AAB04B4C5A77 /* Pods-Tests-acknowledgements.markdown */,
-				E8CAF1D900790968AADED09A /* Pods-Tests-acknowledgements.plist */,
-				0E031B0473CEE39BCF18F1F3 /* Pods-Tests-dummy.m */,
-				349AFB38EBFBE0BEE840EE8A /* Pods-Tests-environment.h */,
-				A6902D260AFB73293D262E3D /* Pods-Tests-resources.sh */,
-				68CA62DD45C1999A8427F3EE /* Pods-Tests.debug.xcconfig */,
-				6D0E364848A980F7301CD372 /* Pods-Tests.release.xcconfig */,
+				D4924BB5154BFA659B954E4F0F2D9346 /* PXCollectionViewController.h */,
+				5504E7F468470415A178E96419AD17B9 /* PXCollectionViewController.m */,
+				82AC69B4A9C377DAC321455B4F470566 /* PXDoubleNavTitle.h */,
+				585A9692257BAC2DD02303505C9A29EE /* PXDoubleNavTitle.m */,
+				37DD6BBDACE1156400581042585D01E5 /* PXNavigationController.h */,
+				9894765F3E01AB04ACB67A766833E1B9 /* PXNavigationController.m */,
+				F916B2882F64FD463DEDC31DC4012F4E /* PXTabBarController.h */,
+				C85925AF8B47879B6C6B9E959026107F /* PXTabBarController.m */,
+				266FBB4D74714CA60089C87BF300371E /* PXTableViewController.h */,
+				37A3671079604A8EAA135F2D350A4AFF /* PXTableViewController.m */,
+				8A6335591EA7CABA884D7778CE32FC79 /* PXViewController.h */,
+				550BBEAFF5186860ECDB69DC9D6C8336 /* PXViewController.m */,
+				016B6A4DD3C9146299A52C014571C42C /* UIViewController+PXViewController.h */,
+				A8C4035B9F5D1ECA0B08D1768927FDAC /* UIViewController+PXViewController.m */,
+				7E2A5BB7B226242B16792A3F812569DB /* Private */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15438C90DE508602BBBBFDED5BC41885 /* PXBlockAlertView.bundle */,
+				72730DFEC545B0F7A4BF544C497495D8 /* PXViewController.bundle */,
+				D95A810AD55F60D1B1ABCF93E0C73CC5 /* libMZAppearance.a */,
+				37226909910BD7184D83FA42C3400E11 /* libPXBlockAlertView.a */,
+				7CC171B9D59667EB656472700CA61148 /* libPXViewController.a */,
+				9B2219906BE3593CD25B3129D65A8489 /* libPods-PXViewController.a */,
+				2EA0BD479800A688508ACDEC8C1679CC /* libPods-Tests.a */,
+				13859ACB1950432C31D933C0077EFCFA /* libSVProgressHUD.a */,
+				E66CECC9DA40F11AEBD9EC0FDA344800 /* libUIAlertController-BetterConstructor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE053D76984834938F76749887DBC9F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC7BBC58E7DE4D9582A25B201224928B /* SVProgressHUD.xcconfig */,
+				41CB04E1A48BC2081D18B7DF61352E67 /* SVProgressHUD-Private.xcconfig */,
+				FFE1515F429D484D775013DC61410E45 /* SVProgressHUD-dummy.m */,
+				C94F07AE4307A6B3F04BA3B7E4E3EFDA /* SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		D25CD8F29678A8035B7F86B4AD380DB4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2BB522D17AC03A9FF2B0E9CDB087ECDE /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		E3241428298E8CD708DCCE1E43641864 /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				606D2FF285DFE176943C1D7D22306F0F /* Pods-Tests-acknowledgements.markdown */,
+				9AFA2C7C7CB83626A3E7E6F0B121CA20 /* Pods-Tests-acknowledgements.plist */,
+				408112BA2166165E558675A2C16DF4A7 /* Pods-Tests-dummy.m */,
+				B23C8452057A0423EF78BE7D78A07F4F /* Pods-Tests-resources.sh */,
+				09F4723A62F5A97D6B2C300C2179ACFF /* Pods-Tests.debug.xcconfig */,
+				08401BCF463FF9EFF2ECEF96646D24A9 /* Pods-Tests.release.xcconfig */,
 			);
 			name = "Pods-Tests";
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
+		EF608D909B4DA8C9F124CF8F30EBF0F9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41835F10CACB7B7FB8C69D76B85073C2 /* PXViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FADA4FBD0BD9221ACE1C674E0B3C0F79 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88DA53ECD4DDD210C54E0883E8F5D88A /* MZAppearance.xcconfig */,
+				4B16EFFAF4EBB66774BF8D29307260E6 /* MZAppearance-Private.xcconfig */,
+				A58C3AF2F5503F56FA1F83603902C106 /* MZAppearance-dummy.m */,
+				3EB7C1DED31AE83EC5F1906903DE52CA /* MZAppearance-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZAppearance";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C4FE965C055C1F947EEEC6E /* Headers */ = {
+		06C80CBD7BD92DE975677DF22EA040E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74EFD0C8EFA1CAA19E023AE /* MZAppearance.h in Headers */,
-				B1F9E2FE3B0F6515C09E9747 /* NSInvocation+Copy.h in Headers */,
+				562399E84037FC131540D6154B35833F /* MZAppearance.h in Headers */,
+				D8A63C4218BAB1C4ABD5D70716464A4E /* NSInvocation+Copy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		205975ABC135BC1E39EB7C24 /* Headers */ = {
+		A6E03BC82D209DE558C3932FF43FC1F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431FE74E7F02B081061C7E8C /* PXCollectionViewController.h in Headers */,
-				9068FBBF901F67DA76CA97CC /* PXDoubleNavTitle.h in Headers */,
-				0A74287D143C8284606E4EDE /* PXNavigationController.h in Headers */,
-				E34EE94A518EF44D39B0C20B /* PXTableViewController.h in Headers */,
-				8F252CA33AA57B3DFAC47055 /* PXViewController.h in Headers */,
+				89F05D147E1D3780837633BB16691C53 /* SVIndefiniteAnimatedView.h in Headers */,
+				B0D42E3798828F3B0DFEAE2E8C0A9D5F /* SVProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60A76A9618E84B6FF0618B1E /* Headers */ = {
+		ACB7929CBCCC226311431908E46A8D9E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F199AC6B2118F5AD30C27676 /* MZAppearance.h in Headers */,
-				6F340915762F16DE929C96D0 /* NSInvocation+Copy.h in Headers */,
+				0F3BB1A19413434CD805FC8E1F7301A3 /* UIAlertController+BetterConstructor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B81D43693421EC9E7FE30F /* Headers */ = {
+		E9BB1C1965E7509DDEB958E4234F5BFE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED78CF3CA92516B4BEF8811C /* PXCollectionViewController.h in Headers */,
-				5CA2E0D53FA6420D5DF5BF8F /* PXDoubleNavTitle.h in Headers */,
-				F3F46137889DA51B9164714B /* PXNavigationController.h in Headers */,
-				58537BB518868E670749F2B0 /* PXTableViewController.h in Headers */,
-				5199DAEDA3570C4B3A990701 /* PXViewController.h in Headers */,
+				83888EBFE08D5E5C4F292E700303B615 /* PXCollectionViewController.h in Headers */,
+				85A03721070E4A22495C73B5485CC2BC /* PXDoubleNavTitle.h in Headers */,
+				C0C11F0F4D57D0C04B7E65ADCF6BF072 /* PXNavigationController.h in Headers */,
+				632BB12125B611F8B8E8C1DCA48671A9 /* PXNavigationItem.h in Headers */,
+				4CC6A172047784EDFAEAEBBDF0405D3A /* PXNavigationItem_Private.h in Headers */,
+				CA0E5FFAF18A4A31307B93BAB570C7B9 /* PXTabBarController.h in Headers */,
+				5EDC02DE3041DD808A5FE766D7A0BF60 /* PXTableViewController.h in Headers */,
+				53F9709C50C1C7E58A2500258C8D3730 /* PXViewController.h in Headers */,
+				60350A235B162381260989FA02D11C52 /* UIViewController+PXViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC94F99B2141FE8C78ADF07F69333912 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B79C438305EEF16BCD924C2E60AAA2F /* PXBlockAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0104A6629CDA87E3A628B21A /* Pods-Tests-PXViewController-BetterNavBar */ = {
+		26673BA590AED2FB86AE39857C41FD2B /* UIAlertController-BetterConstructor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42EDAA1B04872B035E0927F6 /* Build configuration list for PBXNativeTarget "Pods-Tests-PXViewController-BetterNavBar" */;
+			buildConfigurationList = DCED619E36A90BFDE33E56524F6941D2 /* Build configuration list for PBXNativeTarget "UIAlertController-BetterConstructor" */;
 			buildPhases = (
-				ADDE04704444D509C4014C99 /* Sources */,
-				5CE3CFBC1653D45A2AEA8A4D /* Frameworks */,
-				5CC2D312190B446BD43E6E42 /* Resources */,
+				F1784EF560C529122EBF259B56E0921D /* Sources */,
+				CDEC1BD80BAB68F1C5E79DF2E82BFCA5 /* Frameworks */,
+				ACB7929CBCCC226311431908E46A8D9E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Tests-PXViewController-BetterNavBar";
-			productName = "Pods-Tests-PXViewController-BetterNavBar";
-			productReference = C463EC00EEFFBA95D8B35050 /* BetterNavBar.bundle */;
+			name = "UIAlertController-BetterConstructor";
+			productName = "UIAlertController-BetterConstructor";
+			productReference = E66CECC9DA40F11AEBD9EC0FDA344800 /* libUIAlertController-BetterConstructor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4E0459E90970513A5C2B6553A9E303B4 /* PXBlockAlertView-PXBlockAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059171EEB7FBA238F7A35FC720A60EC8 /* Build configuration list for PBXNativeTarget "PXBlockAlertView-PXBlockAlertView" */;
+			buildPhases = (
+				0EB4016494D6E29BF0D52A8561DF3FD1 /* Sources */,
+				AB2A90F485045D79B39562D861DC1B68 /* Frameworks */,
+				FFC002932A4DD5721470852CF34F0D0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PXBlockAlertView-PXBlockAlertView";
+			productName = "PXBlockAlertView-PXBlockAlertView";
+			productReference = 15438C90DE508602BBBBFDED5BC41885 /* PXBlockAlertView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		1897D72D885DC2AE542C059D /* Pods-Tests-PXViewController */ = {
+		54FDC21E09D9F27E0B02C9E037A71F20 /* Pods-PXViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30DD700BB84B9B3A51C37353 /* Build configuration list for PBXNativeTarget "Pods-Tests-PXViewController" */;
+			buildConfigurationList = 31F4E8EF955BD57A09D202515EA5CA6D /* Build configuration list for PBXNativeTarget "Pods-PXViewController" */;
 			buildPhases = (
-				EB3F77CE3D279F1821DCA2F2 /* Sources */,
-				7B9125A38FC3545BB70B0923 /* Frameworks */,
-				205975ABC135BC1E39EB7C24 /* Headers */,
+				55C0CD22E8E63F99F908122A855A5F6B /* Sources */,
+				16F1CCA6D8F5FFD66D4B1ADB20EF683B /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D3D086817C54DC1ADA0F1C27 /* PBXTargetDependency */,
-				2E0E32E32744F1737806A617 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests-PXViewController";
-			productName = "Pods-Tests-PXViewController";
-			productReference = BC2F1065ED580DC478EF1825 /* libPods-Tests-PXViewController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4AD0C3901F1BAFD0A9DA4FF9 /* Pods-Tests-MZAppearance */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B10B39FF5EDD6089EC0CE905 /* Build configuration list for PBXNativeTarget "Pods-Tests-MZAppearance" */;
-			buildPhases = (
-				CF9DDD4A749E88C3B4DBCB87 /* Sources */,
-				43CE5B97163D407A412ED61D /* Frameworks */,
-				1C4FE965C055C1F947EEEC6E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Tests-MZAppearance";
-			productName = "Pods-Tests-MZAppearance";
-			productReference = 515935C68A174D9A4E1A4E0E /* libPods-Tests-MZAppearance.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4B42074E1C8DA299EB32CB23 /* Pods-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB6FEE448AEA9E1230BA4B91 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
-			buildPhases = (
-				6E0A0879FAF32904421BED62 /* Sources */,
-				0EE54C88C558A368DB2D0ABC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AD2176F6A8F66E31417A0D4 /* PBXTargetDependency */,
-				85DEB30BFB6444B3B78DFA3B /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = B88D9C1588D56E1A53FAAAB5 /* libPods-Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		5B3444D2B202C76F1B338529 /* Pods-PXViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 887032A67695D178231A55CD /* Build configuration list for PBXNativeTarget "Pods-PXViewController" */;
-			buildPhases = (
-				C99E36FF3F99F583E7103E30 /* Sources */,
-				2EC23371D48DE5B326FF1B27 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				90F72B0E104B6ED9D7ED7DC1 /* PBXTargetDependency */,
-				FC64FED44BE5782155E27EE5 /* PBXTargetDependency */,
+				CFD90E83630A0B3EF78974F6B7C91844 /* PBXTargetDependency */,
+				47A9594E2B8469FE72907B34D93DB396 /* PBXTargetDependency */,
+				D1FAD14334ABD84B622AE80F8CB1CDAB /* PBXTargetDependency */,
+				48150F95DDFDBA66D3179A4E1F21FF08 /* PBXTargetDependency */,
+				21AA10FE5E96975D2A695EE814CA7CBD /* PBXTargetDependency */,
 			);
 			name = "Pods-PXViewController";
 			productName = "Pods-PXViewController";
-			productReference = EA20D33C3950B99AB754787F /* libPods-PXViewController.a */;
+			productReference = 9B2219906BE3593CD25B3129D65A8489 /* libPods-PXViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		874F292E900107E1EF143EA1 /* Pods-PXViewController-PXViewController-BetterNavBar */ = {
+		5E60F1E8DEB6CA873FC9666340768E60 /* PXViewController-PXViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 747C7AE1FCE105DB2BFA474D /* Build configuration list for PBXNativeTarget "Pods-PXViewController-PXViewController-BetterNavBar" */;
+			buildConfigurationList = 7E3E056AB1D990FE0279F091DF98B7AF /* Build configuration list for PBXNativeTarget "PXViewController-PXViewController" */;
 			buildPhases = (
-				0D72A49AC4590994BAF6B010 /* Sources */,
-				A515C29209D03E192B7E05C7 /* Frameworks */,
-				534D11DF0349C244C3E80D41 /* Resources */,
+				7432C5EEB5B6D2321516BCD83D43A591 /* Sources */,
+				6D49F69C98EBFD6B1F856B06F1800A57 /* Frameworks */,
+				03ADC91585433BED1159B3552FCA3594 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-PXViewController-PXViewController-BetterNavBar";
-			productName = "Pods-PXViewController-PXViewController-BetterNavBar";
-			productReference = 371999E9D2CCB6445239B076 /* BetterNavBar.bundle */;
+			name = "PXViewController-PXViewController";
+			productName = "PXViewController-PXViewController";
+			productReference = 72730DFEC545B0F7A4BF544C497495D8 /* PXViewController.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		A180545A14C33AC8D4A7EAE2 /* Pods-PXViewController-MZAppearance */ = {
+		74D877F3BE9F62A2C8EC4462EF43D047 /* Pods-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60583D479E3CB5B066F01D32 /* Build configuration list for PBXNativeTarget "Pods-PXViewController-MZAppearance" */;
+			buildConfigurationList = 061FF5B5778CC4239F4E853122D81C4D /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
 			buildPhases = (
-				5F01E8A60D187709DCA563EB /* Sources */,
-				5A4655D56778A242D221DE88 /* Frameworks */,
-				60A76A9618E84B6FF0618B1E /* Headers */,
+				14C89B8E2BFE2839AA1B7E1A3EC60E22 /* Sources */,
+				5483A13A576F4A439B4B77B77D5921DB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				07D0C064D827DB5DC27C1538910AE020 /* PBXTargetDependency */,
+				AB2BF04342313B564A98F129E4E6334C /* PBXTargetDependency */,
 			);
-			name = "Pods-PXViewController-MZAppearance";
-			productName = "Pods-PXViewController-MZAppearance";
-			productReference = 69E8B46C758A401F5DBDDD8D /* libPods-PXViewController-MZAppearance.a */;
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 2EA0BD479800A688508ACDEC8C1679CC /* libPods-Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E501BCF5ABE1F876E044A6AC /* Pods-PXViewController-PXViewController */ = {
+		AC81219DE0473B2BDAE1FD959055F9CB /* PXBlockAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 648F9918686CAB2D6289FBD9 /* Build configuration list for PBXNativeTarget "Pods-PXViewController-PXViewController" */;
+			buildConfigurationList = 012934C743721F2DACDA351D67F95259 /* Build configuration list for PBXNativeTarget "PXBlockAlertView" */;
 			buildPhases = (
-				C9D406C27A8568F055DBEFAF /* Sources */,
-				7C11C6C389F334C8A315F2D2 /* Frameworks */,
-				92B81D43693421EC9E7FE30F /* Headers */,
+				3AE5768FC31EC95E97AF553BB34B379D /* Sources */,
+				8475CB6ED0AAEA426CA2C5316D2FB777 /* Frameworks */,
+				FC94F99B2141FE8C78ADF07F69333912 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				320188F238967F035B2BAB1E /* PBXTargetDependency */,
-				74CB7C80A740363A0E88050F /* PBXTargetDependency */,
+				6D789F2DD1AF41E4F35CDEBA9CB6FDB7 /* PBXTargetDependency */,
+				2BA068589693786FA537E22B90B0F966 /* PBXTargetDependency */,
 			);
-			name = "Pods-PXViewController-PXViewController";
-			productName = "Pods-PXViewController-PXViewController";
-			productReference = 82C4D8AD1E8088EAE46E4CA7 /* libPods-PXViewController-PXViewController.a */;
+			name = PXBlockAlertView;
+			productName = PXBlockAlertView;
+			productReference = 37226909910BD7184D83FA42C3400E11 /* libPXBlockAlertView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B281DA29A9C3EDFB45BA53651F6BA611 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B10C8D8BC6346D953E0D2DDABC63F3E /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				3D0E2D1B45261FB1DAC837B020C4EC01 /* Sources */,
+				383B4BF839254A82265A1E6D540C9F3F /* Frameworks */,
+				A6E03BC82D209DE558C3932FF43FC1F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 13859ACB1950432C31D933C0077EFCFA /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B4E270550E701CFF347E398ED341B6C0 /* PXViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F9FC0B5F4D1755CCE950EA9E5247BD /* Build configuration list for PBXNativeTarget "PXViewController" */;
+			buildPhases = (
+				D7BC310DB2181211C2498AE21B57A7F9 /* Sources */,
+				FAC2ABAAB2ACBF0ABFE3B48D22D44CC1 /* Frameworks */,
+				E9BB1C1965E7509DDEB958E4234F5BFE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3266F0815214CD357D62D58550F0134 /* PBXTargetDependency */,
+				24F3ACCDF40DF53C9396BC0492576E9C /* PBXTargetDependency */,
+			);
+			name = PXViewController;
+			productName = PXViewController;
+			productReference = 7CC171B9D59667EB656472700CA61148 /* libPXViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE45D6287D20DE69EEEA475B665F93A5 /* MZAppearance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68983A206E77BD2379333492D627F880 /* Build configuration list for PBXNativeTarget "MZAppearance" */;
+			buildPhases = (
+				1C29DAA06AD99C51882D3EB17EF51211 /* Sources */,
+				6F3823427048621B254ABDB07F637C39 /* Frameworks */,
+				06C80CBD7BD92DE975677DF22EA040E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZAppearance;
+			productName = MZAppearance;
+			productReference = D95A810AD55F60D1B1ABCF93E0C73CC5 /* libMZAppearance.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CFEF4602BF9BEB38D50AB6D1 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = FFF05E8247E68C5F73390F5C /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D91F768F08F8FF07A723975B;
-			productRefGroup = 03C184DBFB5B1CD2634A748E /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B3444D2B202C76F1B338529 /* Pods-PXViewController */,
-				A180545A14C33AC8D4A7EAE2 /* Pods-PXViewController-MZAppearance */,
-				E501BCF5ABE1F876E044A6AC /* Pods-PXViewController-PXViewController */,
-				874F292E900107E1EF143EA1 /* Pods-PXViewController-PXViewController-BetterNavBar */,
-				4B42074E1C8DA299EB32CB23 /* Pods-Tests */,
-				4AD0C3901F1BAFD0A9DA4FF9 /* Pods-Tests-MZAppearance */,
-				1897D72D885DC2AE542C059D /* Pods-Tests-PXViewController */,
-				0104A6629CDA87E3A628B21A /* Pods-Tests-PXViewController-BetterNavBar */,
+				FE45D6287D20DE69EEEA475B665F93A5 /* MZAppearance */,
+				AC81219DE0473B2BDAE1FD959055F9CB /* PXBlockAlertView */,
+				4E0459E90970513A5C2B6553A9E303B4 /* PXBlockAlertView-PXBlockAlertView */,
+				B4E270550E701CFF347E398ED341B6C0 /* PXViewController */,
+				5E60F1E8DEB6CA873FC9666340768E60 /* PXViewController-PXViewController */,
+				54FDC21E09D9F27E0B02C9E037A71F20 /* Pods-PXViewController */,
+				74D877F3BE9F62A2C8EC4462EF43D047 /* Pods-Tests */,
+				B281DA29A9C3EDFB45BA53651F6BA611 /* SVProgressHUD */,
+				26673BA590AED2FB86AE39857C41FD2B /* UIAlertController-BetterConstructor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		534D11DF0349C244C3E80D41 /* Resources */ = {
+		03ADC91585433BED1159B3552FCA3594 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6A6B26F9065622737B2FA7 /* back-nav.png in Resources */,
-				44F6380962BD1B66FBD9184F /* back-nav@2x.png in Resources */,
+				0EF7288EA34469A62C761B9709D2A054 /* back-nav.png in Resources */,
+				B51BAF3EDDDC23F3BFED9E7CE8D877D1 /* back-nav@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CC2D312190B446BD43E6E42 /* Resources */ = {
+		FFC002932A4DD5721470852CF34F0D0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68FDBFCDCB62C9C5EF255421 /* back-nav.png in Resources */,
-				E6CE753009378631FF44E009 /* back-nav@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D72A49AC4590994BAF6B010 /* Sources */ = {
+		0EB4016494D6E29BF0D52A8561DF3FD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F01E8A60D187709DCA563EB /* Sources */ = {
+		14C89B8E2BFE2839AA1B7E1A3EC60E22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCDBB4EF2B91CFF7BD6121E3 /* MZAppearance.m in Sources */,
-				7B1927BAA939E0E21553D07A /* NSInvocation+Copy.m in Sources */,
-				8FBA972376B5AF6630ECB575 /* Pods-PXViewController-MZAppearance-dummy.m in Sources */,
+				A2A44555C89F656DC4E6773A8B900748 /* Pods-Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E0A0879FAF32904421BED62 /* Sources */ = {
+		1C29DAA06AD99C51882D3EB17EF51211 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F087EEA3DDD8FF332EA3E6EB /* Pods-Tests-dummy.m in Sources */,
+				69F3A85B7FF4C4CDB4FA0E5F2D16AB48 /* MZAppearance-dummy.m in Sources */,
+				B902402CB35F0F5B00BFD9410CE96707 /* MZAppearance.m in Sources */,
+				A03F1AE3B7482125F8F23375F6758758 /* NSInvocation+Copy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADDE04704444D509C4014C99 /* Sources */ = {
+		3AE5768FC31EC95E97AF553BB34B379D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EA5E158FB0D0F50AE6BE3D2F03A6ED8 /* PXBlockAlertView-dummy.m in Sources */,
+				F4911DFBD9179C094B15605524119AAE /* PXBlockAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D0E2D1B45261FB1DAC837B020C4EC01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE7688304D568BF106470980EB865C7 /* SVIndefiniteAnimatedView.m in Sources */,
+				F5ABA31CD2179D1EE0FC3F7183438E56 /* SVProgressHUD-dummy.m in Sources */,
+				27C613CD8F0D5500013A024E4636F20C /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C0CD22E8E63F99F908122A855A5F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119453973C03153BEEE14C01B2B0D324 /* Pods-PXViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7432C5EEB5B6D2321516BCD83D43A591 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C99E36FF3F99F583E7103E30 /* Sources */ = {
+		D7BC310DB2181211C2498AE21B57A7F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BC13EFC6B0838690B1ACFD /* Pods-PXViewController-dummy.m in Sources */,
-				65F0325A1B3C983100B1AE19 /* PXTabBarController.m in Sources */,
+				0AE79AC924B61AEDD4BBC46FC713E149 /* PXCollectionViewController.m in Sources */,
+				C6BD1CFE59259303F7F40E858AB4E583 /* PXDoubleNavTitle.m in Sources */,
+				DBF50B58F98C65F09F5EC27BBA721466 /* PXNavigationController.m in Sources */,
+				5B83EAB875048CBE754D8269712CCBF2 /* PXNavigationItem.m in Sources */,
+				DD7635B80AAE5B9B3D1823128B6B8554 /* PXTabBarController.m in Sources */,
+				35E362765370A46441C8E803E17C8C8D /* PXTableViewController.m in Sources */,
+				08100E4B33B1B2475F571F55080CE52F /* PXViewController-dummy.m in Sources */,
+				EF59E58E74C15F91FB21CD98DD48CCC4 /* PXViewController.m in Sources */,
+				8FDE9D9B8A86ABD612D496580B8C2951 /* UIViewController+PXViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9D406C27A8568F055DBEFAF /* Sources */ = {
+		F1784EF560C529122EBF259B56E0921D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C98A00943EEAC9BA57BA602B /* PXCollectionViewController.m in Sources */,
-				B7755B929297DA1005991BAA /* PXDoubleNavTitle.m in Sources */,
-				B80D2AA1D588C62C68998C9B /* PXNavigationController.m in Sources */,
-				FCC190698BF424E48B4088DF /* PXTableViewController.m in Sources */,
-				BD073D65D8320ED71AD84F44 /* PXViewController.m in Sources */,
-				343E0BA7F9D6A58FB01FFF06 /* Pods-PXViewController-PXViewController-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF9DDD4A749E88C3B4DBCB87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0CB6F0184F1409A6CDA4FCA /* MZAppearance.m in Sources */,
-				52814377C97CAC5265E2916D /* NSInvocation+Copy.m in Sources */,
-				5037E7C13D41EBE6BB6E9D5B /* Pods-Tests-MZAppearance-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB3F77CE3D279F1821DCA2F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0E6F1AAED4CD9C4908FEA77 /* PXCollectionViewController.m in Sources */,
-				0C0A2F90EF3D3814E51CB649 /* PXDoubleNavTitle.m in Sources */,
-				B460AE01101FBBC006C96499 /* PXNavigationController.m in Sources */,
-				DE29C2C85BA545ABFECA0D5A /* PXTableViewController.m in Sources */,
-				CB7979365702CEE13D2DA35E /* PXViewController.m in Sources */,
-				17B03E684B0310AFE7DDD21A /* Pods-Tests-PXViewController-dummy.m in Sources */,
+				3DFCE31FA7DE9D8E24824E19E213C793 /* UIAlertController+BetterConstructor.m in Sources */,
+				E757DE4CAC4E346EF96455C68084F8E1 /* UIAlertController-BetterConstructor-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E0E32E32744F1737806A617 /* PBXTargetDependency */ = {
+		07D0C064D827DB5DC27C1538910AE020 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Tests-PXViewController-BetterNavBar";
-			target = 0104A6629CDA87E3A628B21A /* Pods-Tests-PXViewController-BetterNavBar */;
-			targetProxy = 78A0A2FE0FBE496FC7792972 /* PBXContainerItemProxy */;
+			name = MZAppearance;
+			target = FE45D6287D20DE69EEEA475B665F93A5 /* MZAppearance */;
+			targetProxy = 6F29882DE563023DD6FB79BAFD0F41E2 /* PBXContainerItemProxy */;
 		};
-		320188F238967F035B2BAB1E /* PBXTargetDependency */ = {
+		21AA10FE5E96975D2A695EE814CA7CBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PXViewController-MZAppearance";
-			target = A180545A14C33AC8D4A7EAE2 /* Pods-PXViewController-MZAppearance */;
-			targetProxy = 6EA895EDBEA52D5FAAD0EDD6 /* PBXContainerItemProxy */;
+			name = "UIAlertController-BetterConstructor";
+			target = 26673BA590AED2FB86AE39857C41FD2B /* UIAlertController-BetterConstructor */;
+			targetProxy = 9034B4DBD203978A7A8C444EBADF11E1 /* PBXContainerItemProxy */;
 		};
-		5AD2176F6A8F66E31417A0D4 /* PBXTargetDependency */ = {
+		24F3ACCDF40DF53C9396BC0492576E9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Tests-MZAppearance";
-			target = 4AD0C3901F1BAFD0A9DA4FF9 /* Pods-Tests-MZAppearance */;
-			targetProxy = CD2207B0481B660C99985311 /* PBXContainerItemProxy */;
+			name = "PXViewController-PXViewController";
+			target = 5E60F1E8DEB6CA873FC9666340768E60 /* PXViewController-PXViewController */;
+			targetProxy = 77990B5154A684C925ACD0B98788A63F /* PBXContainerItemProxy */;
 		};
-		74CB7C80A740363A0E88050F /* PBXTargetDependency */ = {
+		2BA068589693786FA537E22B90B0F966 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PXViewController-PXViewController-BetterNavBar";
-			target = 874F292E900107E1EF143EA1 /* Pods-PXViewController-PXViewController-BetterNavBar */;
-			targetProxy = 9A73E7E652E0697E7A58B0F4 /* PBXContainerItemProxy */;
+			name = "UIAlertController-BetterConstructor";
+			target = 26673BA590AED2FB86AE39857C41FD2B /* UIAlertController-BetterConstructor */;
+			targetProxy = F9DD31F3A6412899C6D70EC19FBF5845 /* PBXContainerItemProxy */;
 		};
-		85DEB30BFB6444B3B78DFA3B /* PBXTargetDependency */ = {
+		47A9594E2B8469FE72907B34D93DB396 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Tests-PXViewController";
-			target = 1897D72D885DC2AE542C059D /* Pods-Tests-PXViewController */;
-			targetProxy = 76964FDCFBD01677E35DF7C0 /* PBXContainerItemProxy */;
+			name = PXBlockAlertView;
+			target = AC81219DE0473B2BDAE1FD959055F9CB /* PXBlockAlertView */;
+			targetProxy = 45AE6B66B985B3733C8D11CBC94DD913 /* PBXContainerItemProxy */;
 		};
-		90F72B0E104B6ED9D7ED7DC1 /* PBXTargetDependency */ = {
+		48150F95DDFDBA66D3179A4E1F21FF08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PXViewController-MZAppearance";
-			target = A180545A14C33AC8D4A7EAE2 /* Pods-PXViewController-MZAppearance */;
-			targetProxy = 1871F291CC72F32BB34418C4 /* PBXContainerItemProxy */;
+			name = SVProgressHUD;
+			target = B281DA29A9C3EDFB45BA53651F6BA611 /* SVProgressHUD */;
+			targetProxy = DBF745204718371B8955758FAF2E5E19 /* PBXContainerItemProxy */;
 		};
-		D3D086817C54DC1ADA0F1C27 /* PBXTargetDependency */ = {
+		6D789F2DD1AF41E4F35CDEBA9CB6FDB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Tests-MZAppearance";
-			target = 4AD0C3901F1BAFD0A9DA4FF9 /* Pods-Tests-MZAppearance */;
-			targetProxy = CAF0EA7443A1C5ED82A347AC /* PBXContainerItemProxy */;
+			name = "PXBlockAlertView-PXBlockAlertView";
+			target = 4E0459E90970513A5C2B6553A9E303B4 /* PXBlockAlertView-PXBlockAlertView */;
+			targetProxy = 2323B7527DDC0EB174EBC026C6DF7F62 /* PBXContainerItemProxy */;
 		};
-		FC64FED44BE5782155E27EE5 /* PBXTargetDependency */ = {
+		A3266F0815214CD357D62D58550F0134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PXViewController-PXViewController";
-			target = E501BCF5ABE1F876E044A6AC /* Pods-PXViewController-PXViewController */;
-			targetProxy = DAC0CD0D426B9C52262150A7 /* PBXContainerItemProxy */;
+			name = MZAppearance;
+			target = FE45D6287D20DE69EEEA475B665F93A5 /* MZAppearance */;
+			targetProxy = D765648AB6890C36123105BBAAF04C15 /* PBXContainerItemProxy */;
+		};
+		AB2BF04342313B564A98F129E4E6334C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PXViewController;
+			target = B4E270550E701CFF347E398ED341B6C0 /* PXViewController */;
+			targetProxy = 63E2CA4CDD76E67B093E44F1050EA959 /* PBXContainerItemProxy */;
+		};
+		CFD90E83630A0B3EF78974F6B7C91844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZAppearance;
+			target = FE45D6287D20DE69EEEA475B665F93A5 /* MZAppearance */;
+			targetProxy = E6D7AB51EB29C7A92F7E6EA8ACDC645A /* PBXContainerItemProxy */;
+		};
+		D1FAD14334ABD84B622AE80F8CB1CDAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PXViewController;
+			target = B4E270550E701CFF347E398ED341B6C0 /* PXViewController */;
+			targetProxy = BED35CA467A9EEE1CFF8175F0F76FD24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01A3BE24F07D5A55FF2F90D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BetterNavBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		0248E779F79BF31772C9795B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C35943D3A1FAFC15945037ED /* Pods-Tests-PXViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-PXViewController/Pods-Tests-PXViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1FCC8BE345B31886884BAEE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C19336A7920250050465F8 /* Pods-PXViewController-PXViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PXViewController-PXViewController/Pods-PXViewController-PXViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		32C0534FBEBA1A48F2624313 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BetterNavBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		4479C55397A123883859E4BB /* Release */ = {
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -920,79 +1051,9 @@
 			};
 			name = Release;
 		};
-		541FA44EA6F2D663B19FCE43 /* Debug */ = {
+		063F31F1E2308134CFA64737EF5FEF8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11B15EBD72C51372B6F4F520 /* Pods-Tests-MZAppearance-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-MZAppearance/Pods-Tests-MZAppearance-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58BC57F986D5FCD9DDCC3B8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AE769AB11039625D6218EE9 /* Pods-PXViewController-MZAppearance-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PXViewController-MZAppearance/Pods-PXViewController-MZAppearance-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5D7C61D7118722CB3275594A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BetterNavBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		67CC68CD012A50182A54230E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AE769AB11039625D6218EE9 /* Pods-PXViewController-MZAppearance-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PXViewController-MZAppearance/Pods-PXViewController-MZAppearance-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7C883B510DABF0ADB5D853F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BetterNavBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		975641C04F556C099C6CD36C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9CCA2A1DC220479A1656364 /* Pods-PXViewController.release.xcconfig */;
+			baseConfigurationReference = 08401BCF463FF9EFF2ECEF96646D24A9 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1006,87 +1067,7 @@
 			};
 			name = Release;
 		};
-		9948ECDD7989D76CDC81B883 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14D2F6F0BE1C3A87CE39F43E /* Pods-PXViewController.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B1A76433D1A0517CF5209DDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C19336A7920250050465F8 /* Pods-PXViewController-PXViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PXViewController-PXViewController/Pods-PXViewController-PXViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B90983D2C0B1293DBF36B055 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11B15EBD72C51372B6F4F520 /* Pods-Tests-MZAppearance-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-MZAppearance/Pods-Tests-MZAppearance-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D8DC128116D0E7FC2CC67775 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68CA62DD45C1999A8427F3EE /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E08E11C7F3E975A282B71842 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C35943D3A1FAFC15945037ED /* Pods-Tests-PXViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-PXViewController/Pods-Tests-PXViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E71918A66A1AD59138BCBA05 /* Debug */ = {
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1125,9 +1106,133 @@
 			};
 			name = Debug;
 		};
-		F3CBEB79F31411F188115DC5 /* Release */ = {
+		0C2401939E5F0CF5B455699AFFB4FB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D0E364848A980F7301CD372 /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 0F2594598E819318EE40314C9307C9A6 /* PXBlockAlertView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PXBlockAlertView/PXBlockAlertView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0EF2E9A25B7A91C034C71701C926C53F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9325160DC245E8E5D7D008FDCCD9864 /* PXViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PXViewController/PXViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0F2BF2D81FFE424C6111F2E6327EF58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B16EFFAF4EBB66774BF8D29307260E6 /* MZAppearance-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1102F5C94F5313542A1785829930E529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B16EFFAF4EBB66774BF8D29307260E6 /* MZAppearance-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3747EA6B86F2AB1C0AF66D2AE1CAF89C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9325160DC245E8E5D7D008FDCCD9864 /* PXViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PXViewController/PXViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		499DA406B3DD0537F21DB688F7B01074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF77029633F113AAADF98BE38930253 /* UIAlertController-BetterConstructor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController-BetterConstructor/UIAlertController-BetterConstructor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5602E38916BB5AB3EF203AA2C1A58DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9325160DC245E8E5D7D008FDCCD9864 /* PXViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PXViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		599EF0CD4C47D33E47464BFC0646C1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB04E1A48BC2081D18B7DF61352E67 /* SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5A3882188A65E2891369EA7122FA10B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AFF7E4C846FDD31CCE85DFA75B0097 /* Pods-PXViewController.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1141,91 +1246,216 @@
 			};
 			name = Release;
 		};
+		7CE4C3B0DEDF874B7C20980006FADFB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB04E1A48BC2081D18B7DF61352E67 /* SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A166D75BD6047C5F72987B49292A7716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9325160DC245E8E5D7D008FDCCD9864 /* PXViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PXViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		ABCAAE1D52524DDA42BDA9F20059BFEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF77029633F113AAADF98BE38930253 /* UIAlertController-BetterConstructor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController-BetterConstructor/UIAlertController-BetterConstructor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B3BE6D520C404B4011BDDF426E77FACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F4723A62F5A97D6B2C300C2179ACFF /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B99FF7D42DC8AB656A9C19B69DE61D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2594598E819318EE40314C9307C9A6 /* PXBlockAlertView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PXBlockAlertView/PXBlockAlertView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C581C47853AD682DD1382F4FDDB6A15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2594598E819318EE40314C9307C9A6 /* PXBlockAlertView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PXBlockAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CFE81137E40E643EA15671C31EF2F5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2594598E819318EE40314C9307C9A6 /* PXBlockAlertView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PXBlockAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E5DDCFF26F201937434BAA49D9DE76C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427989BD4F2906850A52047D126D4D6D /* Pods-PXViewController.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30DD700BB84B9B3A51C37353 /* Build configuration list for PBXNativeTarget "Pods-Tests-PXViewController" */ = {
+		012934C743721F2DACDA351D67F95259 /* Build configuration list for PBXNativeTarget "PXBlockAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E08E11C7F3E975A282B71842 /* Debug */,
-				0248E779F79BF31772C9795B /* Release */,
+				0C2401939E5F0CF5B455699AFFB4FB30 /* Debug */,
+				B99FF7D42DC8AB656A9C19B69DE61D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42EDAA1B04872B035E0927F6 /* Build configuration list for PBXNativeTarget "Pods-Tests-PXViewController-BetterNavBar" */ = {
+		059171EEB7FBA238F7A35FC720A60EC8 /* Build configuration list for PBXNativeTarget "PXBlockAlertView-PXBlockAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32C0534FBEBA1A48F2624313 /* Debug */,
-				5D7C61D7118722CB3275594A /* Release */,
+				CFE81137E40E643EA15671C31EF2F5DE /* Debug */,
+				C581C47853AD682DD1382F4FDDB6A15B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60583D479E3CB5B066F01D32 /* Build configuration list for PBXNativeTarget "Pods-PXViewController-MZAppearance" */ = {
+		061FF5B5778CC4239F4E853122D81C4D /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58BC57F986D5FCD9DDCC3B8F /* Debug */,
-				67CC68CD012A50182A54230E /* Release */,
+				B3BE6D520C404B4011BDDF426E77FACB /* Debug */,
+				063F31F1E2308134CFA64737EF5FEF8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		648F9918686CAB2D6289FBD9 /* Build configuration list for PBXNativeTarget "Pods-PXViewController-PXViewController" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FCC8BE345B31886884BAEE7 /* Debug */,
-				B1A76433D1A0517CF5209DDF /* Release */,
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		747C7AE1FCE105DB2BFA474D /* Build configuration list for PBXNativeTarget "Pods-PXViewController-PXViewController-BetterNavBar" */ = {
+		31F4E8EF955BD57A09D202515EA5CA6D /* Build configuration list for PBXNativeTarget "Pods-PXViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C883B510DABF0ADB5D853F3 /* Debug */,
-				01A3BE24F07D5A55FF2F90D2 /* Release */,
+				E5DDCFF26F201937434BAA49D9DE76C1 /* Debug */,
+				5A3882188A65E2891369EA7122FA10B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		887032A67695D178231A55CD /* Build configuration list for PBXNativeTarget "Pods-PXViewController" */ = {
+		68983A206E77BD2379333492D627F880 /* Build configuration list for PBXNativeTarget "MZAppearance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9948ECDD7989D76CDC81B883 /* Debug */,
-				975641C04F556C099C6CD36C /* Release */,
+				1102F5C94F5313542A1785829930E529 /* Debug */,
+				0F2BF2D81FFE424C6111F2E6327EF58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB6FEE448AEA9E1230BA4B91 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+		6B10C8D8BC6346D953E0D2DDABC63F3E /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8DC128116D0E7FC2CC67775 /* Debug */,
-				F3CBEB79F31411F188115DC5 /* Release */,
+				7CE4C3B0DEDF874B7C20980006FADFB4 /* Debug */,
+				599EF0CD4C47D33E47464BFC0646C1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B10B39FF5EDD6089EC0CE905 /* Build configuration list for PBXNativeTarget "Pods-Tests-MZAppearance" */ = {
+		7E3E056AB1D990FE0279F091DF98B7AF /* Build configuration list for PBXNativeTarget "PXViewController-PXViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				541FA44EA6F2D663B19FCE43 /* Debug */,
-				B90983D2C0B1293DBF36B055 /* Release */,
+				5602E38916BB5AB3EF203AA2C1A58DE2 /* Debug */,
+				A166D75BD6047C5F72987B49292A7716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFF05E8247E68C5F73390F5C /* Build configuration list for PBXProject "Pods" */ = {
+		C4F9FC0B5F4D1755CCE950EA9E5247BD /* Build configuration list for PBXNativeTarget "PXViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E71918A66A1AD59138BCBA05 /* Debug */,
-				4479C55397A123883859E4BB /* Release */,
+				3747EA6B86F2AB1C0AF66D2AE1CAF89C /* Debug */,
+				0EF2E9A25B7A91C034C71701C926C53F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCED619E36A90BFDE33E56524F6941D2 /* Build configuration list for PBXNativeTarget "UIAlertController-BetterConstructor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCAAE1D52524DDA42BDA9F20059BFEA /* Debug */,
+				499DA406B3DD0537F21DB688F7B01074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CFEF4602BF9BEB38D50AB6D1 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

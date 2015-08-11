@@ -8,11 +8,22 @@
 
 #import "PXAppDelegate.h"
 
+#import "PXExampleViewController.h"
+
+#import <PXViewController/PXNavigationController.h>
+
 @implementation PXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     // Override point for customization after application launch.
+    [[self window] setBackgroundColor:[UIColor lightGrayColor]];
+    [[self window] makeKeyAndVisible];
+    
+    PXExampleViewController * rootVC = [[PXExampleViewController alloc] init];
+    PXNavigationController * nc = [[PXNavigationController alloc] initWithRootViewController:rootVC];
+    [[self window] setRootViewController:nc];
     return YES;
 }
 							

@@ -3,6 +3,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'PXViewController', :exclusive => true do
   pod "PXViewController", :path => "../"
+  pod 'PXBlockAlertView'
+  pod 'SVProgressHUD'
 end
 
 target 'Tests', :exclusive => true do
