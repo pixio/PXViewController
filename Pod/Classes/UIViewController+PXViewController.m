@@ -130,7 +130,13 @@ static inline BOOL px_swizzleClassMethod(Class class, Class sender, SEL original
         return nil;
     }
     
-    UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-nav"] style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSURL *url = [bundle URLForResource:@"PXViewController" withExtension:@"bundle"];
+    NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+    
+    UIImage* backImage = [[UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"back-nav" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    
+    UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backImage style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
     objc_setAssociatedObject(self, @selector(backBarButtonItem), backBarButtonItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
     // Determine the shared base class
