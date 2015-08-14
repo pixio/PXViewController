@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PXViewController"
-  s.version          = "0.1.4"
+  s.version          = "0.1.5"
   s.summary          = "A more customizable and colorable nav bar."
   s.description      = <<-DESC
                        A set of subclasses for viewcontrollers and `UINavigationController` that allow you to have a title and a subtitle in the nav bar as well as custom font, colors, and more.
