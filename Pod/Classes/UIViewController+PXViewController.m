@@ -47,35 +47,17 @@ static inline void px_swizzleSelector(Class class, SEL originalSelector, SEL swi
     method_exchangeImplementations(originalMethod, swizzledMethod);
 }
 
-static inline BOOL px_swizzleInstanceMethod(Class class, Class sender, SEL originalSelector, SEL swizzledSelector)
+static inline void px_swizzleInstanceMethod(Class class, Class sender, SEL originalSelector, SEL swizzledSelector)
 {
-    BOOL added = TRUE;
-    added = added && px_addMethod(class, class, originalSelector);
-    added = added && px_addMethod(class, sender, swizzledSelector);
+    px_addMethod(class, class, originalSelector);
+    px_addMethod(class, sender, swizzledSelector);
     
-    if (added)
-    {
-        px_swizzleSelector(class, originalSelector, swizzledSelector);
-    }
-    
-    return added;
+    px_swizzleSelector(class, originalSelector, swizzledSelector);
 }
 
-static inline BOOL px_swizzleClassMethod(Class class, Class sender, SEL originalSelector, SEL swizzledSelector)
+static inline void px_swizzleClassMethod(Class class, Class sender, SEL originalSelector, SEL swizzledSelector)
 {
-    Method originalMethod = class_getClassMethod(class, originalSelector);
-    Method swizzledMethod = class_getClassMethod(sender, swizzledSelector);
-
-    BOOL added = TRUE;
-    added = added && class_addMethod(class, originalSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
-    added = added && class_addMethod(class, swizzledSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
-    
-    if (added)
-    {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
-    
-    return added;
+    px_swizzleInstanceMethod(object_getClass((id)class), object_getClass((id)sender), originalSelector, swizzledSelector);
 }
 
 
