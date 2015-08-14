@@ -368,6 +368,8 @@ static inline Class getBaseClass(Class c)
     [[[self px_navigationItem] titleView] setTintColor:[self px_navBarTextColor]];
     [[[self navigationController] navigationBar] setTintColor:[self px_navBarTextColor]];
     [[[self navigationController] navigationBar] setBarTintColor:[self px_navBarColor]];
+    
+    [[[self tabBarController] tabBar] setBarTintColor:[self px_navBarColor]];
 }
 
 - (UIStatusBarStyle) px_statusBarStyle
