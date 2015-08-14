@@ -69,16 +69,50 @@ static inline void px_swizzleClassMethod(Class class, Class sender, SEL original
 
 @implementation PXViewControllerSwizzlingObject
 
+/**
+ *  List of classes that should be swizzled. These view controllers will act like
+ *  PXViewController
+ */
+static inline NSArray* swizzledClasses()
+{
+    static NSArray* classes;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        classes = @[
+                    [PXCollectionViewController class],
+                    [PXTabBarController class],
+                    [PXTableViewController class],
+                    [PXViewController class],
+                    ];
+    });
+    
+    return classes;
+}
+
+/**
+ *  Get the base class of the passed in class. The returned class should be one
+ *  of the classes returned from swizzledClasses().
+ */
+static inline Class getBaseClass(Class c)
+{
+    for (Class baseClass in swizzledClasses())
+    {
+        if ([c isSubclassOfClass:baseClass])
+        {
+            return baseClass;
+        }
+    }
+    return nil;
+}
+
 + (void)load
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        
-        [self swizzleMethodsForClass:[PXViewController class]];
-        [self swizzleMethodsForClass:[PXCollectionViewController class]];
-        [self swizzleMethodsForClass:[PXTabBarController class]];
-        [self swizzleMethodsForClass:[PXTableViewController class]];
-
+        for (Class c in swizzledClasses())
+        {
+            [self swizzleMethodsForClass:c];
+        }
     });
 }
 
@@ -121,19 +155,8 @@ static inline void px_swizzleClassMethod(Class class, Class sender, SEL original
     UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backImage style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
     objc_setAssociatedObject(self, @selector(backBarButtonItem), backBarButtonItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
-    // Determine the shared base class
-    Class baseClass = [self class];
-    while (baseClass != nil)
-    {
-        Class superClass = [baseClass superclass];
-        if (superClass == [UIViewController class])
-        {
-            break;
-        }
-        baseClass = superClass;
-    }
     
-    [[[self class] appearance] applyInvocationRecursivelyTo:self upToSuperClass:baseClass];
+    [[[self class] appearance] applyInvocationRecursivelyTo:self upToSuperClass:getBaseClass([self class])];
 
     return self;
 }
@@ -254,7 +277,7 @@ static inline void px_swizzleClassMethod(Class class, Class sender, SEL original
 
 + (id) px_appearance
 {
-    return [MZAppearance appearanceForClass:[PXViewController class]];
+    return [MZAppearance appearanceForClass:getBaseClass([self class])];
 }
 
 #pragma mark - Dummy Methods
