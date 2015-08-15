@@ -45,17 +45,14 @@ There is an example project.  It should give you a taste for how I intended to u
 
 ## Notes
 
-There are some oddities of these subclasses worth mentioning.  First of all, they are subclasses.  Why are they subclasses?
+There are some oddities of these subclasses worth mentioning.
 
-Short answer: I can't force `UITableViewController` to inherit from my `PXViewController` class.  
-Long answer: We're working on a shared code version for code maintenance reasons.  Keep an eye out for a large commit sometime in the future.
-
-Second note: The `UITabBarController` subclass has navigation bar properties.  Don't people usually put navigation stacks in tabs, not tab bars in the navigation stack?
+First note: The `UITabBarController` subclass has navigation bar properties.  Don't people usually put navigation stacks in tabs, not tab bars in the navigation stack?
 
 Short answer: Yes.  But I have done the tab-bar-in-nav-stack version enough times that this is worth it.  
 Long answer: Almost all of these classes are centered around limitations relating to `UINavigationController` and the navigation bar.  So if you aren't using a tab bar controller in an navigation controller, it doesn't make sense to use `PXTabBarController` anyway.
 
-Third note: Why is the back button forced to be a chevron only?
+Second note: Why is the back button forced to be a chevron only?
 
 Short answer: That's what all the kids are doing these days.  
 Long answer: Essentially every design we get or produce for clients uses this for the back button.  Usually, if someone needs some of the more advanced capabilities that these classes offer, they also use a plain-ol' chevron back button (no text).  
