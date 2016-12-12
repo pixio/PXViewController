@@ -51,7 +51,7 @@ static inline void px_swizzleInstanceMethod(Class class, Class sender, SEL origi
 {
     px_addMethod(class, class, originalSelector);
     px_addMethod(class, sender, swizzledSelector);
-    
+
     px_swizzleSelector(class, originalSelector, swizzledSelector);
 }
 
@@ -85,7 +85,7 @@ static inline NSArray* swizzledClasses()
                     [PXViewController class],
                     ];
     });
-    
+
     return classes;
 }
 
@@ -134,7 +134,7 @@ static inline Class getBaseClass(Class c)
     px_swizzleInstanceMethod(class, self, @selector(forwardInvocation:), @selector(px_forwardInvocation:));
     px_swizzleInstanceMethod(class, self, @selector(forwardingTargetForSelector:), @selector(px_forwardingTargetForSelector:));
     px_swizzleInstanceMethod(class, self, @selector(isKindOfClass:), @selector(px_isKindOfClass:));
-    
+
     px_swizzleClassMethod(class, self, @selector(appearance), @selector(px_appearance));
 }
 
@@ -145,17 +145,17 @@ static inline Class getBaseClass(Class c)
     {
         return nil;
     }
-    
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+
+    NSBundle *bundle = [NSBundle bundleForClass:[PXViewController class]];
     NSURL *url = [bundle URLForResource:@"PXViewController" withExtension:@"bundle"];
     NSBundle *imageBundle = [NSBundle bundleWithURL:url];
-    
+
     UIImage* backImage = [[UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"back-nav" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-    
+
     UIBarButtonItem* backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:backImage style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)];
     objc_setAssociatedObject(self, @selector(backBarButtonItem), backBarButtonItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
-    
+
     [[[self class] appearance] applyInvocationRecursivelyTo:self upToSuperClass:getBaseClass([self class])];
 
     return self;
@@ -165,13 +165,13 @@ static inline Class getBaseClass(Class c)
 {
     [self px_viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     // always give self the custom navigation view
     [[self navigationItem] setTitleView:[[self px_navigationItem] titleView]];
-    
+
     // Do any additional setup after loading the view.
     [[self navigationItem] setHidesBackButton:TRUE];
-    
+
     [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(backPressed)]];
 
     [self updateViewControllerAttributes:FALSE force:TRUE];
@@ -180,22 +180,22 @@ static inline Class getBaseClass(Class c)
 - (void)px_viewWillAppear:(BOOL)animated
 {
     [self px_viewWillAppear:animated];
-    
+
     // set up buttons here, so subclasses can change whether they show up in viewDidLoad.
     // back button
-    
+
     UIBarButtonItem* backBarButtonItem = objc_getAssociatedObject(self, @selector(backBarButtonItem));
     if ([[self px_navigationItem] canGoBack] && [[self navigationItem] leftBarButtonItem] != backBarButtonItem) {
         [[self navigationItem] setLeftBarButtonItem:backBarButtonItem];
     }
-    
+
     [self updateViewControllerAttributes:animated force:TRUE];
 }
 
 - (void)px_viewDidAppear:(BOOL)animated
 {
     [self px_viewDidAppear:animated];
-    
+
     // status bar
     [[UIApplication sharedApplication] setStatusBarHidden:![[self px_navigationItem] showsStatusBar]];
 }
@@ -252,7 +252,7 @@ static inline Class getBaseClass(Class c)
         [invocation invokeWithTarget:[self px_navigationItem]];
         return;
     }
-    
+
     [self px_forwardInvocation:invocation];
 }
 
@@ -321,43 +321,43 @@ static inline Class getBaseClass(Class c)
         // viewController is not visible
         return;
     }
-    
+
     static UIImage* clearImage = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         clearImage = [UIImage new];
     });
-    
+
     [[self navigationItem] setHidesBackButton:TRUE animated:animated]; // like seriously, this needs to be everywhere
-    
+
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [[UIApplication sharedApplication] setStatusBarHidden:FALSE]; // just do it.
     [[[self px_navigationItem] titleView] sizeToFit];
-    
+
     // clear nav bar stuff
     BOOL clearNavBar = [[self px_navigationItem] clearNavBar];
     BOOL navBarShadow = (clearNavBar && [[self px_navigationItem] clearNavBarShadow]);
-    
+
     [[[self navigationController] navigationBar] setBackgroundImage:(clearNavBar ? clearImage : nil)
                                                       forBarMetrics:UIBarMetricsDefault];
     [[[self navigationController] navigationBar] setShadowImage:(clearNavBar ? clearImage : nil)];
     [[[self navigationController] navigationBar] setTranslucent:clearNavBar];
-    
+
     [[[[self navigationController] navigationBar] layer] setShadowRadius:(navBarShadow ? 2.0f : 0.0f)];
     [[[[self navigationController] navigationBar] layer] setShadowOpacity:(navBarShadow ? 0.5f : 0.0f)];
     [[[[self navigationController] navigationBar] layer] setShadowOffset:(navBarShadow ? CGSizeZero : CGSizeMake(0.0f, -3.0f))];
-    
+
     // nav bar
-    
+
     [[self navigationController] setNavigationBarHidden:![[self px_navigationItem] showsNavBar] animated:animated];
-    
+
     BOOL makeRoomForNavBar = ([[self px_navigationItem] showsNavBar] && ![[self px_navigationItem] clearNavBar]);
-    
+
     [self setAutomaticallyAdjustsScrollViewInsets:makeRoomForNavBar];
-    
+
     UIRectEdge edges = makeRoomForNavBar ? UIRectEdgeNone : UIRectEdgeAll;
     [self setEdgesForExtendedLayout:edges];
-    
+
     // status bar
     // this works when viewcontrollerbasedstatusbarappearance is true
     [self setNeedsStatusBarAppearanceUpdate];
@@ -368,7 +368,7 @@ static inline Class getBaseClass(Class c)
     [[[self px_navigationItem] titleView] setTintColor:[self px_navBarTextColor]];
     [[[self navigationController] navigationBar] setTintColor:[self px_navBarTextColor]];
     [[[self navigationController] navigationBar] setBarTintColor:[self px_navBarColor]];
-    
+
     [[[self tabBarController] tabBar] setBarTintColor:[self px_navBarColor]];
 }
 
@@ -408,7 +408,7 @@ static inline Class getBaseClass(Class c)
 - (void)setShowsStatusBar:(BOOL)showsStatusBar
 {
     [[self px_navigationItem] setShowsStatusBar:showsStatusBar];
-    
+
     [self updateViewControllerAttributes:FALSE force:TRUE];
 }
 
@@ -417,9 +417,9 @@ static inline Class getBaseClass(Class c)
     if ([[self px_navigationItem] clearNavBar] == clearNavBar) {
         return;
     }
-    
+
     [[self px_navigationItem] setClearNavBar:clearNavBar];
-    
+
     [self updateViewControllerAttributes:FALSE force:TRUE];
 }
 
@@ -428,9 +428,9 @@ static inline Class getBaseClass(Class c)
     if ([[self px_navigationItem] clearNavBarShadow] == clearNavBarShadow) {
         return;
     }
-    
+
     [[self px_navigationItem] setClearNavBarShadow:clearNavBarShadow];
-    
+
     [self updateViewControllerAttributes:FALSE force:TRUE];
 }
 
@@ -442,14 +442,14 @@ static inline Class getBaseClass(Class c)
 - (void)setLightTintColor:(UIColor *)lightTintColor
 {
     [[self px_navigationItem] setLightTintColor:lightTintColor];
-    
+
     [self updateViewControllerAttributes:FALSE force:TRUE];
 }
 
 - (void)setDarkTintColor:(UIColor *)darkTintColor
 {
     [[self px_navigationItem] setDarkTintColor:darkTintColor];
-    
+
     [self updateViewControllerAttributes:FALSE force:TRUE];
 }
 
