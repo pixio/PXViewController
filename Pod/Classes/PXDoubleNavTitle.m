@@ -46,28 +46,27 @@
         [_titleLabel setTextColor:[UIColor whiteColor]];
         [_titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_titleLabel setFont:[[self font] fontWithSize:16.0f]];
-//        [_titleLabel setTranslatesAutoresizingMaskIntoConstraints:FALSE];
+        [_titleLabel setTranslatesAutoresizingMaskIntoConstraints:FALSE];
         [self addSubview:_titleLabel];
         
         _subtitleLabel = [UILabel new];
         [_subtitleLabel setTextColor:[UIColor whiteColor]];
         [_subtitleLabel setTextAlignment:NSTextAlignmentCenter];
         [_subtitleLabel setFont:[[self font] fontWithSize:11.0f]];
-//        [_subtitleLabel setTranslatesAutoresizingMaskIntoConstraints:FALSE];
+        [_subtitleLabel setTranslatesAutoresizingMaskIntoConstraints:FALSE];
         [self addSubview:_subtitleLabel];
 
-#warning Uncomment when iOS 8+ adoption doesn't suck.
-//        NSDictionary* views = NSDictionaryOfVariableBindings(_titleLabel, _subtitleLabel);
-//        NSDictionary* metrics = @{};
-//        
-//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_titleLabel]|" options:0 metrics:metrics views:views]];
-//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_subtitleLabel]|" options:0 metrics:metrics views:views]];
-//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleLabel]" options:0 metrics:metrics views:views]];
-//        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_subtitleLabel]|" options:0 metrics:metrics views:views]];
-//        [self addConstraint:[NSLayoutConstraint constraintWithItem:_subtitleLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_titleLabel attribute:NSLayoutAttributeBaseline multiplier:1.0f constant:0.0f]];
+        NSDictionary* views = NSDictionaryOfVariableBindings(_titleLabel, _subtitleLabel);
+        NSDictionary* metrics = @{};
+        
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_titleLabel]|" options:0 metrics:metrics views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_subtitleLabel]|" options:0 metrics:metrics views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleLabel]" options:0 metrics:metrics views:views]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_subtitleLabel]|" options:0 metrics:metrics views:views]];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_subtitleLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_titleLabel attribute:NSLayoutAttributeBaseline multiplier:1.0f constant:0.0f]];
         
         // call directly
-//        [self updateConstraints];
+        [self updateConstraints];
     }
     return self;
 }
@@ -82,8 +81,8 @@
     
     [self layoutIfNeeded];
     
-//#warning trigger layout change
-//    [self setNeedsUpdateConstraints];
+#warning trigger layout change
+    [self setNeedsUpdateConstraints];
     
     [self sizeToFit];
 }
@@ -136,33 +135,23 @@
     return CGSizeMake(width, height);
 }
 
-//- (void)updateConstraints
-//{
-//    [self removeConstraints:_constraints];
-//    [_constraints removeAllObjects];
-//    
-//    NSDictionary* views = NSDictionaryOfVariableBindings(_titleLabel, _subtitleLabel);
-//    NSDictionary* metrics = @{};
-//    if (_haveSubtitle) {
-//        // show the label
-//        [_constraints addObject:[NSLayoutConstraint constraintWithItem:_subtitleLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:_titleLabel attribute:NSLayoutAttributeHeight multiplier:0.6f constant:0.0f]];
-//    } else {
-//        [_constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_subtitleLabel(0)]" options:0 metrics:metrics views:views]];
-//    }
-//    
-//    [self addConstraints:_constraints];
-//    
-//    [super updateConstraints];
-//}
-
-//- (CGSize)sizeThatFitsThatDOESNTMAKEAPPLEFUCKITSELFWITHACACTUS:(CGSize)size // doesn't crash // apple has since fixed this
-//{
-//    CGSize titleSize = [_titleLabel sizeThatFits:size];
-//    CGSize subtitleSize = [_subtitleLabel sizeThatFits:size];
-//    CGFloat width = MAX(titleSize.width, subtitleSize.width);
-//    CGFloat height = titleSize.height + (_haveSubtitle ? subtitleSize.height : 0.0f);
-//    NSLog(@"%f, %f", width, height);
-//    return CGSizeMake(width, height);
-//}
+- (void)updateConstraints
+{
+    [self removeConstraints:_constraints];
+    [_constraints removeAllObjects];
+    
+    NSDictionary* views = NSDictionaryOfVariableBindings(_titleLabel, _subtitleLabel);
+    NSDictionary* metrics = @{};
+    if (_haveSubtitle) {
+        // show the label
+        [_constraints addObject:[NSLayoutConstraint constraintWithItem:_subtitleLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:_titleLabel attribute:NSLayoutAttributeHeight multiplier:0.6f constant:0.0f]];
+    } else {
+        [_constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_subtitleLabel(0)]" options:0 metrics:metrics views:views]];
+    }
+    
+    [self addConstraints:_constraints];
+    
+    [super updateConstraints];
+}
 
 @end
