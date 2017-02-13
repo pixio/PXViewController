@@ -2,7 +2,7 @@ PODS:
   - MZAppearance (1.1.5)
   - PXBlockAlertView (0.1.4):
     - UIAlertController-BetterConstructor
-  - PXViewController (0.1.2):
+  - PXViewController (0.1.8):
     - MZAppearance
   - SVProgressHUD (1.1.3)
   - UIAlertController-BetterConstructor (0.1.1)
@@ -19,8 +19,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   MZAppearance: 6e9dc64e42074c0a19812a327f590746c3283bab
   PXBlockAlertView: 24f640895366f09f8770e907b81a8cc16be4f2f5
-  PXViewController: 17342d504269a5ef3a1ce1db1ab5d1af912d4972
+  PXViewController: d2d01415140e28836bb9025162d3e132c7ac982c
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   UIAlertController-BetterConstructor: 7e4c138e64d6ef0b59f1482df6a47a09fbaf46e2
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 534465159718f54f87a4c72d46d45d053445c09e
+
+COCOAPODS: 1.2.0
