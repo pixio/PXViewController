@@ -38,22 +38,22 @@
  *  changes the font for this title only.  Setting this property to nil, falls back on the 
  *  PXDoubleNavTitle class font.
  */
-@property (nonatomic) UIFont* font UI_APPEARANCE_SELECTOR;
+@property (nonatomic, nullable) UIFont* font UI_APPEARANCE_SELECTOR;
 
 /**
  *  The title displayed in the navigation bar.
  */
-@property (nonatomic, copy) NSString * title;
+@property (nonatomic, copy, nullable) NSString * title;
 
 /**
  *  A subtitle which, if set, is shown below the title in the navigation bar.
  *  If this property is nil or @@"", the position of the title text is placed where the default navigation title would be.
  */
-@property (nonatomic, copy) NSString * subtitle;
+@property (nonatomic, copy, nullable) NSString * subtitle;
 
 /**
  *  Color applied to text of titles.
  */
-@property (nonatomic) UIColor * tintColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, nullable) UIColor * tintColor UI_APPEARANCE_SELECTOR;
 
 @end

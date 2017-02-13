@@ -52,23 +52,23 @@ typedef NS_ENUM(NSInteger, PXViewControllerNavBarStyle) {
 /**
  *  The title displayed in the navigation bar.
  */
-@property (nonatomic, copy) NSString * title;
+@property (nonatomic, copy, nullable) NSString * title;
 
 /**
  *  A subtitle which, if set, is shown below the title in the navigation bar.
  *  If this property is nil or @@"", the position of the title text is placed where the default navigation title would be.
  */
-@property (nonatomic, copy) NSString * subtitle;
+@property (nonatomic, copy, nullable) NSString * subtitle;
 
 /**
  *  The color of the nav title and buttons (or the bar, depending on the style).  Defaults to [UIColor whiteColor].
  */
-@property (nonatomic, copy) UIColor * lightTintColor MZ_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, nullable) UIColor * lightTintColor MZ_APPEARANCE_SELECTOR;
 
 /**
  *  The color of the nav bar (or the title and buttons, depending on the style).  Defaults to [UIColor blackColor].
  */
-@property (nonatomic, copy) UIColor * darkTintColor MZ_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, nullable) UIColor * darkTintColor MZ_APPEARANCE_SELECTOR;
 
 /**
  *  Set to indicate whether or not this viewcontroller has the ability to go back. For example, modal viewcontrollers should not.
